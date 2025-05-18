@@ -1,0 +1,42 @@
+- 
+    let cardInfo = {
+        bike: {
+            img: "img/bike.png",
+            name: "Тур на велосипедах",
+            price: "335 грн*",
+            description: [
+                'Подорожуючи на велосипеді, ви',
+                'поринете в атмосферу мальовничих',
+                'гір, чарівних краєвидів та шалених пригод.'
+            ]
+        },
+        earth: {
+            img: "img/bball.png",
+            name: "Екскурсія на острів",
+            price: "500 грн*",
+            description: [
+                'Подорож на острів занурить Вас у',
+                'незабутні пригоди. Неймовірна',
+                'краса у будь-яку пору року',
+            ]
+        },
+        message: {
+            img: "img/message.png",
+            name: "Особливе замовлення",
+            price: "250 грн.*",
+            description: [
+                'Обираючи цю подорож, Ви самостійно',
+                'робите її незабутньою та не схожою на',
+                'будь-які інші.',
+            ]
+        }
+    }
+
+mixin card(oneCard)
+    figure.boxcard.co-2
+        figcaption.box-padding
+            p.p-width.text-align 
+                img.imgbox(src=oneCard.img)
+            p.currency #{oneCard.name}
+            p.price #{oneCard.price}
+            p.description #{oneCard.description}

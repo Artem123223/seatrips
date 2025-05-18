@@ -7,16 +7,17 @@ html(lang="en")
         link(rel="icon", href="img/logo.png", type="image/png")
         title Морські Пригоди, відпочивайте де забажаєте, є все на ваш вибір!
     body 
-        .wrapper.puck
+        include components/mixin
+        header.wrapper.puck
             nav.navbar.navbar-expand-lg.bg-body-tertiary(style='background-color: transparent;' data-bs-theme='light')
-                .container-fluid
-                    a.navbar-brand.items-center(href='index.html')
+                .container-fluid.row.row-cols-4
+                    a.col.navbar-brand.items-center(href='index.html')
                         img.d-inline-block.align-text-top(src='img/logo.png' alt='Logo' width='33' height='40')
                         |   trips
                     button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
                         span.navbar-toggler-icon
                     #navbarSupportedContent.collapse.navbar-collapse
-                    ul.navbar-nav.me-auto.mb-2.mb-lg-0.styleul
+                    ul.col-6.navbar-nav.me-auto.mb-2.mb-lg-0
                         li.nav-item
                             a.nav-link.active(aria-current='page' href='#') ГОловна
                         li.nav-item
@@ -31,8 +32,37 @@ html(lang="en")
                             a.nav-link.active(aria-current='page' href='#') відгуки
                         li.nav-item
                             a.nav-link.active(aria-current='page' href='#') Контакти
-            div
-                div.middle-header
-                    h1 Морські пригоди
-                    p.bottom-text Не важливо, чи Ваша мандрівка належить до елітного рівня чи до економваріанту, туроператор S trips потурбується, щоб Ви залишились задоволеними!
-                    a.detail(href="#") детальніше 
+            .container
+                div.row.align-items-center.min-vh-100
+                    .middle-header.col-6.mx-auto.text-center.mt-auto.mb-4.pt-5
+                        h1.d-inline-block.mt-5 Морські пригоди
+                        p.bottom-text Не важливо, чи Ваша мандрівка належить до елітного рівня чи до економваріанту, туроператор S trips потурбується, щоб Ви залишились задоволеними!
+                        a.detail(href="#") детальніше
+                    .container
+                        .bottom-middle-header.row
+                            .col.text-center
+                                p.text-up.margin-bottom обери свій
+                                p.text-up.margin-bottom план подорожі
+                                p.text-bottom Наша фірма -лідер на ринку у своїй сфері
+                                a(href="#down")
+                                    svg.col-12.mx-auto.svg(enable-background="new 0 0 512 512" height="20px" id="Layer_1" version="1.0" viewBox="0 0 512 512" width="18px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        g
+                                            g
+                                                polygon(points="63.8,269.8 106.2,227.4 253,374.2 399.8,227.4 442.2,269.8 253,459")
+                                        g
+                                            g
+                                                polygon(points="63.8,95.4 106.2,53 253,199.8 399.8,53 442.2,95.4 253,284.6")
+        main#down
+            .wrapper
+                .maincards.row
+                    .firstcardka.col-lg-3
+                        h2.cardsbosstext Про нашу компанію
+                        p.description-about-company Наша компанія пропонує ряд цікавих-розважальних послуг...
+                        a.detail.pukashka(href="#") детальніше
+                        p.uvaga * - зверніть увагу, зміна ціни може залежати від курсу долара.
+                    +card(cardInfo.bike)
+                    +card(cardInfo.earth)
+                    +card(cardInfo.message)
+                    div.analizi
+                        a.gamno(href="#") дивитись усі плани
+                        img(src="img/arrowright.png", alt="стрілка вправо")
