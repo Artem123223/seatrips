@@ -4,6 +4,35 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="css/style.css")
-        link(rel="icon", href="img/logo.svg", type="image/svg")
-        title Морські Пригоди
+        link(rel="icon", href="img/logo.png", type="image/png")
+        title Морські Пригоди, відпочивайте де забажаєте, є все на ваш вибір!
     body 
+        .wrapper.puck
+            nav.navbar.navbar-expand-lg.bg-body-tertiary(style='background-color: transparent;' data-bs-theme='light')
+                .container-fluid
+                    a.navbar-brand.items-center(href='index.html')
+                        img.d-inline-block.align-text-top(src='img/logo.png' alt='Logo' width='33' height='40')
+                        |   trips
+                    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                        span.navbar-toggler-icon
+                    #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav.me-auto.mb-2.mb-lg-0.styleul
+                        li.nav-item
+                            a.nav-link.active(aria-current='page' href='#') ГОловна
+                        li.nav-item
+                            a.nav-link.active(aria-current='page' href='#') послуги
+                        li.nav-item
+                            a.nav-link.active(aria-current='page' href='#') про компанію
+                        li.nav-item
+                            a.nav-link.active(aria-current='page' href='#') Акції
+                        li.nav-item
+                            a.nav-link.active(aria-current='page' href='#') Партнери
+                        li.nav-item
+                            a.nav-link.active(aria-current='page' href='#') відгуки
+                        li.nav-item
+                            a.nav-link.active(aria-current='page' href='#') Контакти
+            div
+                div.middle-header
+                    h1 Морські пригоди
+                    p.bottom-text Не важливо, чи Ваша мандрівка належить до елітного рівня чи до економваріанту, туроператор S trips потурбується, щоб Ви залишились задоволеними!
+                    a.detail(href="#") детальніше 
