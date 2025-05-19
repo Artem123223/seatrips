@@ -24,3 +24,7 @@
         border: 1rem solid #fff
     @if $empty != false
         width: 170px
+
+=media($size)
+    @media screen and (min-width:#{$size}px)
+        @content
