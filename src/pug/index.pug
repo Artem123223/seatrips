@@ -96,3 +96,42 @@ html(lang="en")
                             img.portretone(src="img/portretone.png", alt="")
             .week.wrapper
                 h3.special-choise-week Спеціальні пропозиції тижня
+                p.proposition Гарячі праозиції, по-швидше обирай і поїхали!
+                .cards.row.row-cols-1.row-cols-md-4
+                    +curd(proPosition.romantic)
+                    +curd(proPosition.biker)
+                    +curd(proPosition.island)
+                    +curd(proPosition.surfing)
+            div.hrplus
+                hr.hr
+        footer
+            .wrapper.row-g
+                h2 додаткова інформація
+                .first-information.colss
+                    div
+                        img.icon(src="img/file.png", alt="файл")
+                        h5 Графік роботи готелів.xls
+                    p.size-file Розмір файла: 10Mb
+                    p.descript Розклад роботи усіх наших готелів, можете знайти за цим посиланням. Та додатково завантажити їх фото.
+                    a.button(href="#" downoload) скачати
+                        img(src="img/cloud.png", alt="хмара")
+                .second-information.colss
+                    div
+                        img.icon(src="img/file.png", alt="файл")
+                        h5 Інформація про харчування.xls
+                    p.size-file Розмір файла: 10Mb
+                    p.descript У будь-якому нашому турі включені сніданки у вартість. Якщо ж бажаєте замовити додотково, то ознайомтесь з умовами.
+                    a.button(href="#" downoload) скачати
+                        img(src="img/cloud.png", alt="хмара")
+                .portret-two.colss
+                    p.answer задати питання
+                    p.say-goodday Скажіть доброго дня 
+                        | нашому консультанту,
+                        | і ми з радістю відповімо 
+                        | на Ваші запитання
+                    div.tel
+                        img(src="img/phone.png", alt="телефон")
+                        a(href="tel:380505698511") +38 (050) 56 98 511
+                    p.name-Anna Анна Миколаївна
+                    p.consultant консультант
+                    img.portrettwo(src="img/portrettwo.png", alt="")

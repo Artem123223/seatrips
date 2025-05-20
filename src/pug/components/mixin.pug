@@ -40,6 +40,78 @@ mixin card(oneCard)
         figcaption.box-padding
             p.p-width.text-align
                 img.imgbox(src=oneCard.img)
+            if oneCard.isStar
+                p.star
+                    img.starimg(src="img/star.png", alt="")
+            else
+                p
             p.currency #{oneCard.name}
             p.price #{oneCard.price}
             p.description #{oneCard.description}
+
+-
+    let proPosition = {
+        romantic: {
+            img: "img/cardone.png",
+            name: "Романтична подорож на 2",
+            description: [
+                'Подорож у найромантичніші',
+                'куточки світу, занурить вас у',
+                'дивовижні пейзажі природи.'
+            ],
+            price: "2599 грн.",
+            isBike: none
+        },
+        biker: {
+            img: "img/cardtwo.png",
+            name: "Велотур",
+            description: [
+                'Бажаєте прокататись з вітерцем, та',
+                'ще й з критим краєвидом довкола?',
+                'Тоді швидше замовляй велотур!',
+            ],
+            price: "555 грн",
+            isBike: true
+        },
+        island: {
+            img: "img/cardthree.png",
+            name: "На острови!",
+            description: [
+                'Хочеш зануритись у тишу, місце де',
+                'не має натовпу, та панує дмка',
+                'природа? Тоді вперед за пригодами!',
+            ],
+            price: "1559 грн.",
+            isBike: none
+        },
+        surfing: {
+            img: "img/cardfour.png",
+            name: "Катання на сьорфінгу",
+            description: [
+                'Хочеш отримати екстрим та мега',
+                'вражень одночасно? Тоді вперед',
+                'ловити хвилі!',
+            ],
+            price: "999 грн.",
+            isBike: none
+        }
+    }
+
+mixin curd(twoCard)
+    .col
+        .card.twoCard(style='width: 18rem;')
+            img.card-img-top(src=twoCard.img)
+            .card-body
+                h5.card-title #{twoCard.name}
+                p.card-text #{twoCard.description}
+                .g-flex
+                    p.prices #{twoCard.price}
+                    a.btns(href='#') замовити
+                        img.absoluteimg(src="img/secondarrowright.png", alt="стрілка вправо")
+                p.stars
+                    img.starimgs(src="img/star.png", alt="")
+                if twoCard.isBike
+                    p.biker
+                        img.superimg(src="img/biker.png", alt="велосипед")
+                else
+                    |

@@ -106,6 +106,33 @@ h1
   display: flex
   flex-direction: column
   justify-content: center
+  position: relative
+  &::before
+    content: ""
+    position: absolute
+    width: 362px
+    height: 36px
+    top: 18%
+    left: 50%
+    transform: translate(-50%, 50%)
+    border: none
+    border-top: 4px solid #fff
+    border-left: 4px solid #fff
+    border-right: 4px solid #fff
+    opacity: 0.300
+  &::after
+    content: ""
+    position: absolute
+    width: 362px
+    height: 89px
+    top: 55%
+    left: 50%
+    transform: translate(-50%, 50%)
+    border: none
+    border-bottom: 4px solid #fff
+    border-left: 4px solid #fff
+    border-right: 4px solid #fff
+    opacity: 0.300
 
 .container
   position: relative
@@ -263,9 +290,28 @@ main
   height: 270px
   box-sizing: border-box
   transition: .3s ease
+  overflow: hidden
+  position: relative
   &:hover
     background-color: #fff
     box-shadow: 0px 4px 10.5px 5px rgba(3,20,31,0.05)
+
+.star
+  position: absolute
+  width: 100px
+  height: 100px
+  top: 3%
+  left: -19%
+  transform: rotate(45deg) translate(-50%, -50%)
+  background-color: #26cb15
+
+.starimg
+  position: absolute
+  width: 17px
+  height: 16px
+  top: 50%
+  left: 85%
+  transform: rotate(-45deg) translate(-50%, -50%)
 
 .currency
   width: 100%
@@ -332,10 +378,16 @@ main
   font-weight: 400
   font-family: "Rubik"
 
-.hr
+hr
   border: none
   border-top: 1px solid #dfe3e6
+  background-color: #f5f8fa
   width: 100%
+  margin-bottom: 0
+
+.hrplus
+  width: 70vw
+  margin: 0 auto
 
 .island
   position: relative
@@ -425,32 +477,30 @@ main
   flex-direction: column
   align-items: center
   position: relative
-
-.cols:before
-  content: ""
-  position: absolute
-  width: 200px
-  height: 255px
-  top: 41%
-  left: 15%
-  transform: translate(-50%, -50%)
-  border: none
-  border-top: 4px solid #5c6770
-  border-left: 4px solid #5c6770
-  border-bottom: 4px solid #5c6770
-
-.cols:after
-  content: ""
-  position: absolute
-  width: 200px
-  height: 255px
-  top: 41%
-  left: 84%
-  transform: translate(-50%, -50%)
-  border: none
-  border-top: 4px solid #5c6770
-  border-right: 4px solid #5c6770
-  border-bottom: 4px solid #5c6770
+  &::before
+    content: ""
+    position: absolute
+    width: 200px
+    height: 255px
+    top: 41%
+    left: 5%
+    transform: translate(-50%, -50%)
+    border: none
+    border-top: 4px solid #5c6770
+    border-left: 4px solid #5c6770
+    border-bottom: 4px solid #5c6770
+  &::after
+    content: ""
+    position: absolute
+    width: 200px
+    height: 255px
+    top: 41%
+    left: 95%
+    transform: translate(-50%, -50%)
+    border: none
+    border-top: 4px solid #5c6770
+    border-right: 4px solid #5c6770
+    border-bottom: 4px solid #5c6770
 
 .lapki
   margin-bottom: 15px
@@ -487,6 +537,7 @@ main
 
 .week
   padding-top: 72px
+  margin-bottom: 90px
 
 .special-choise-week
   font-size: 36px
@@ -495,3 +546,300 @@ main
   color: #333
   font-weight: 400
   text-align: center
+  margin-bottom: 15px
+
+.proposition
+  font-size: 16px
+  line-height: 24px
+  color: #333
+  font-weight: 400
+  font-style: italic
+  text-align: center
+  padding-bottom: 36px
+
+.cards
+  diplay: flex
+  justify-content: space-between
+
+.relative
+  position: relative
+
+.absoluteimg
+  position: absolute
+  width: 11px
+  height: 11px
+  top: 0
+  left: 0
+  transform: translate(-50%, -50%)
+
+.twoCard
+  position: relative
+  overflow: hidden
+
+.stars
+  position: absolute
+  width: 100px
+  height: 100px
+  top: 3%
+  left: -18%
+  z-index: 1
+  transform: rotate(45deg) translate(-50%, -50%)
+  background-color: #26cb15
+
+.starimgs
+  position: absolute
+  width: 17px
+  height: 16px
+  top: 45%
+  left: 85%
+  transform: rotate(-45deg) translate(-50%, -50%)
+
+.card-title
+  font-size: 18px
+  line-height: 26px
+  color: #333333
+  font-weight: 400
+
+.card-text
+  font-size: 13px
+  line-height: 19px
+  color: #999
+  font-weight: 400
+
+.prices
+  font-size: 24px
+  line-height: 44px
+  color: #0099ff
+  font-weight: 400
+  margin-bottom: 0
+
+.btns
+  font-size: 13px
+  letter-spacing: 1px
+  text-transform: uppercase
+  text-decoration: none
+  color: #ffb700
+  font-weight: 400
+  transition: .3s ease
+  text-align: center
+  position: relative
+  margin-right: 15px
+  &:hover
+    background-color: #ffb700
+    padding: 5px
+    border-radius: 15px
+    color: #fff
+
+.absoluteimg
+  position: absolute
+  width: 11px
+  height: 11px
+  top: 50%
+  left: 115%
+  transform: translate(-50%, -50%)
+
+.card
+  border-radius: 0px
+  border: none
+  background-color: #f5f8fa
+  transition: .3s ease
+  &:hover
+    background-color: #fff
+    box-shadow: 0px 4px 10.5px 5px rgba(3,20,31,0.05)
+
+.g-flex
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.biker
+  position: absolute
+  width: 60px
+  height: 205px
+  top: 26.1%
+  left: 10%
+  z-index: 0
+  background-color: #0099ff
+  transform: translate(-50%, -50%)
+
+.superimg
+  position: absolute
+  width: 40px
+  height: 35px
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+footer
+  background-color: #f5f8fa
+  padding-top: 78px
+
+footer h2
+  font-size: 36px
+  letter-spacing: 1px
+  line-height: 40px
+  text-transform: uppercase
+  color: #333
+  font-weight: 400
+  max-width: 237px
+
+.first-information,
+.second-information
+  padding: 25px 28px 30px 20px
+
+.first-information
+  background-image: url('../img/informationone.png')
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  width: 270px
+  height: 270px
+
+.second-information
+  background-image: url('../img/informationtwo.png')
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  width: 270px
+  height: 270px
+
+.icon
+  width: 34px
+  height: 42px
+
+.first-information h5,
+.second-information h5
+  font-size: 18px
+  line-height: 24px
+  color: #fff
+  font-weight: 400
+
+.first-information div,
+.second-information div
+  display: flex
+  gap: 17px
+
+.size-file
+  font-size: 13px
+  line-height: 19px
+  color: #bbb
+  font-weight: 400
+  padding: 0 0 0 50px
+
+.descript
+  width: 223px
+  height: 51px
+  font-size: 13px
+  line-height: 19px
+  color: #fefefe
+  font-weight: 400
+  margin-bottom: 46px
+
+.button
+  display: inline-block
+  font-size: 12px
+  letter-spacing: 0px
+  text-transform: uppercase
+  color: #ffb700
+  text-decoration: none
+  font-weight: 400
+  text-align: right
+  position: relative
+  padding: 8px 15px
+  border: 2px solid #ffb700
+  border-radius: 25px
+  width: 110px
+
+.button > img
+  position: absolute
+  width: 15px
+  height: 11px
+  top: 50%
+  left: 22%
+  transform: translate(-50%, -50%)
+
+.answer
+  font-size: 18px
+  letter-spacing: 1px
+  line-height: 26px
+  color: #333
+  font-weight: 400
+  text-align: center
+  margin-bottom: 17px
+
+.say-goodday
+  font-size: 13px
+  line-height: 16px
+  color: #999
+  font-weight: 400
+  text-align: center
+  margin: 0 auto
+  margin-bottom: 20px
+  width: 149px
+
+.tel
+  font-size: 18px
+  line-height: 26px
+  color: #0099ff
+  font-weight: 400
+  display: flex
+  margin-bottom: 17px
+  align-items: center
+  justify-content: center
+  gap: 6px
+
+.tel > a
+  text-decoration: none
+
+.name-Anna
+  font-size: 18px
+  line-height: 26px
+  color: #333
+  font-weight: 400
+  text-align: center
+  margin-bottom: 0px
+
+.consultant
+  font-size: 13px
+  line-height: 19px
+  color: #999
+  font-weight: 400
+  font-family: "PT Sans"
+  text-align: center
+
+.row-g
+  display: flex
+  justify-content: space-between
+
+.portret-two
+  display: flex
+  flex-direction: column
+  justify-content: center
+  position: relative
+  &::before
+    content: ""
+    position: absolute
+    width: 44px
+    height: 261px
+    top: 45%
+    left: -7%
+    transform: translate(-50%, -50%)
+    border-top: 4px solid #ffb700
+    border-left: 4px solid #ffb700
+    border-bottom: 4px solid #ffb700
+  &::after
+    content: ""
+    position: absolute
+    width: 44px
+    height: 261px
+    top: 45%
+    left: 105%
+    transform: translate(-50%, -50%)
+    border-top: 4px solid #ffb700
+    border-right: 4px solid #ffb700
+    border-bottom: 4px solid #ffb700
+
+.portrettwo
+  width: 86px
+  height: 86px
+  margin: 0 auto
