@@ -4,6 +4,7 @@
             img: "img/bike.png",
             name: "Тур на велосипедах",
             price: "335 грн*",
+            isStar: none,
             description: [
                 'Подорожуючи на велосипеді, ви',
                 'поринете в атмосферу мальовничих',
@@ -14,6 +15,7 @@
             img: "img/bball.png",
             name: "Екскурсія на острів",
             price: "500 грн*",
+            isStar: true,
             description: [
                 'Подорож на острів занурить Вас у',
                 'незабутні пригоди. Неймовірна',
@@ -24,6 +26,7 @@
             img: "img/message.png",
             name: "Особливе замовлення",
             price: "250 грн.*",
+            isStar: true,
             description: [
                 'Обираючи цю подорож, Ви самостійно',
                 'робите її незабутньою та не схожою на',
@@ -35,7 +38,7 @@
 mixin card(oneCard)
     figure.boxcard.co-2
         figcaption.box-padding
-            p.p-width.text-align 
+            p.p-width.text-align
                 img.imgbox(src=oneCard.img)
             p.currency #{oneCard.name}
             p.price #{oneCard.price}

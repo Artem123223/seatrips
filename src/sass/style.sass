@@ -40,6 +40,20 @@
   font-style: normal
   font-display: swap
 
+@font-face
+  font-family: 'PT Sans'
+  src: url('../fonts/PTSans-Bold.woff2') format("woff2"), url('../fonts/PTSans-Bold.woff') format("woff"), url('../fonts/PTSans-Bold.ttf') format("truetype")
+  font-weight: bold
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'PT Sans'
+  src: url('../fonts/PTSans-Regular.woff2') format("woff2"), url('../fonts/PTSans-Regular.woff') format("woff"), url('../fonts/PTSans-Regular.ttf') format("truetype")
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
 * 
   margin: 0
   padding: 0
@@ -53,7 +67,7 @@ body
 
 .wrapper
   margin: 0 auto
-  width: 80vw
+  width: 70vw
 
 .navbar 
   background-color: transparent !important
@@ -77,7 +91,8 @@ h1
   margin-bottom: 20px
 
 .bottom-text
-  max-width: 528px
+  width: 528px
+  max-height: 62px
   font-size: 16px
   line-height: 24px
   color: #ffffff
@@ -88,6 +103,9 @@ h1
 
 .middle-header
   height: 60vh
+  display: flex
+  flex-direction: column
+  justify-content: center
 
 .container
   position: relative
@@ -121,13 +139,15 @@ h1
     color: #ffb700 !important
 
 .navbar
-  max-width: 80vw
+  max-width: 70vw
   margin: 0 auto
   padding-top: 35px
   padding-bottom: 0
 
 .detail
   display: inline-block
+  width: 170px
+  margin: 0 auto
   font-size: 16px
   letter-spacing: 1px
   text-transform: uppercase
@@ -136,7 +156,7 @@ h1
   color: #fdfcfb
   font-weight: 400
   text-align: center
-  padding: 9.5px 28px 9.5px
+  padding: 9.5px 0
   border-radius: 22px
   box-shadow: 0px 4px 10.5px 5px rgba(193,139,1,0.24)
   background-color: #ffb700
@@ -146,6 +166,33 @@ h1
     background-color: transparent
     border: 1px solid #ffb700
     box-shadow: 0 0 0 0 rgba(193,139,1,0.24)
+
+.detial
+  display: inline-block
+  border-radius: 23px
+  background-color: rgba(0,153,255,0)
+  border: 2px solid #0099ff
+  padding: 9.5px 35px 9.5px
+  font-size: 16px
+  letter-spacing: 1px
+  text-transform: uppercase
+  color: #0099ff
+  font-weight: 400
+  text-align: center
+  text-decoration: none
+  transition: .3s ease
+  &:hover
+    color: #fff
+    border: 2px solid #fff
+    background-color: #0099ff
+
+.gar
+  padding: 9.5px 0
+  margin-right: 10px
+  width: 180px
+
+.container-fluid
+  --bs-gutter-x: 0
 
 .text-up
   font-size: 36px
@@ -218,8 +265,10 @@ main
   transition: .3s ease
   &:hover
     background-color: #fff
+    box-shadow: 0px 4px 10.5px 5px rgba(3,20,31,0.05)
 
 .currency
+  width: 100%
   font-size: 18px
   line-height: 26px
   color: #333
@@ -229,6 +278,8 @@ main
 
 .maincards
   position: relative
+  display: flex
+  justify-content: space-between
   margin-bottom: 72px
 
 .gamno
@@ -246,14 +297,13 @@ main
 .analizi
   position: absolute
   top: 100%
-  right: 36%
+  right: 22%
   width: 200px
   height: 11px
   transform: translate(-50%, -50%)
 
 .price
   font-size: 24px
-  line-height: 44px
   color: #0099ff
   font-weight: 400
   text-align: center
@@ -262,14 +312,15 @@ main
 .imgbox
   margin-bottom: 26px
 
-main > .wrapper > .maincards > figure:first-child > figcaption > .p-width
-  width: 60px
+.box-padding > .p-width
   height: 53px
 
-main figure:last-child .p-width,
-main figure:nth-child(2) .p-width
-  width: 50px
+.box-padding > .p-width,
+.box-padding > .p-width
   height: 51px
+
+.p-width
+  margin-top: 29px
 
 .text-align
   text-align: center !important
@@ -281,16 +332,15 @@ main figure:nth-child(2) .p-width
   font-weight: 400
   font-family: "Rubik"
 
-.box-padding
-  padding: 29px 34px 48px 20px
-
 .hr
   border: none
   border-top: 1px solid #dfe3e6
   width: 100%
 
 .island
+  position: relative
   padding-top: 75px
+  padding-bottom: 40px
 
 .h2-abaudna
   font-size: 36px
@@ -298,7 +348,8 @@ main figure:nth-child(2) .p-width
   text-transform: uppercase
   color: #333
   font-weight: 400
-  margin-bottom: 26px
+  padding-top: 10px
+  margin-bottom: 15px
 
 .opis
   width: 396px
@@ -311,8 +362,136 @@ main figure:nth-child(2) .p-width
   margin-bottom: 39px
 
 .col-mlss
-  width: 370px
-  height: 270px
+  width: 444px
+  height: 291px
 
 .row-s
   display: flex
+
+.gray-box
+  position: absolute
+  height: 169px
+  width: 285px
+  padding: 30px 54px 36px 57px
+  top: 43%
+  left: 73%
+  background-color: #edf2f5
+
+.gaybox
+  width: 165px
+  max-height: 61px
+
+.oleg
+  background-image: url('/img/backgroundcenter.png') 
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  margin-top: 40px
+  padding: 90px 0 100px
+
+.oleg h2:first-child
+  font-size: 56px
+  letter-spacing: 2px
+  line-height: 66px
+  text-transform: uppercase
+  color: #fff
+  font-weight: 400
+  margin-bottom: 0
+
+.oleg h2:last-child
+  font-size: 56px
+  letter-spacing: 2px
+  line-height: 66px
+  text-transform: uppercase
+  color: #0099ff
+  font-weight: 400
+  margin-bottom: 31px
+
+.oleg-description
+  width: 396px
+  height: 75px
+  font-size: 16px
+  line-height: 24px
+  color: #fff
+  font-weight: 400
+  font-family: "PT Sans"
+  margin-bottom: 53px
+
+.rows
+  display: flex
+
+.cols
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: relative
+
+.cols:before
+  content: ""
+  position: absolute
+  width: 200px
+  height: 255px
+  top: 41%
+  left: 15%
+  transform: translate(-50%, -50%)
+  border: none
+  border-top: 4px solid #5c6770
+  border-left: 4px solid #5c6770
+  border-bottom: 4px solid #5c6770
+
+.cols:after
+  content: ""
+  position: absolute
+  width: 200px
+  height: 255px
+  top: 41%
+  left: 84%
+  transform: translate(-50%, -50%)
+  border: none
+  border-top: 4px solid #5c6770
+  border-right: 4px solid #5c6770
+  border-bottom: 4px solid #5c6770
+
+.lapki
+  margin-bottom: 15px
+
+.descr
+  margin: 0 auto
+  width: 423px
+  height: 95px
+  font-size: 16px
+  line-height: 25px
+  color: #fff
+  font-weight: 400
+  font-style: italic
+  margin-bottom: 16px
+
+.h5-oleg
+  font-size: 18px
+  line-height: 26px
+  color: #fff
+  font-weight: 400
+  margin-bottom: 5px
+
+.client
+  font-size: 14px
+  line-height: 19px
+  color: #999
+  font-weight: 400
+  margin-bottom: 12px
+
+.portretone
+  width: 86px
+  height: 86px
+  box-sizing: border-box
+
+.week
+  padding-top: 72px
+
+.special-choise-week
+  font-size: 36px
+  line-height: 42px
+  text-transform: uppercase
+  color: #333
+  font-weight: 400
+  text-align: center

@@ -10,14 +10,14 @@ html(lang="en")
         include components/mixin
         header.wrapper.puck
             nav.navbar.navbar-expand-lg.bg-body-tertiary(style='background-color: transparent;' data-bs-theme='light')
-                .container-fluid.row.row-cols-5
-                    a.col.navbar-brand.items-center(href='index.html')
+                .container-fluid.row-13-g.row-colss-5
+                    a.navbar-brand.items-center(href='index.html')
                         img.d-inline-block.align-text-top(src='img/logo.png' alt='Logo' width='33' height='40')
                         |   trips
                     button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
                         span.navbar-toggler-icon
                     #navbarSupportedContent.collapse.navbar-collapse
-                    ul.col-8.navbar-nav.me-auto.mb-2.mb-lg-0
+                    ul.col-6-lg.nav
                         li.nav-item
                             a.nav-link.active(aria-current='page' href='#') ГОловна
                         li.nav-item
@@ -33,9 +33,9 @@ html(lang="en")
                         li.nav-item
                             a.nav-link.active(aria-current='page' href='#') Контакти
             .container
-                div.row.align-items-center.min-vh-100
-                    .middle-header.col-6.mx-auto.text-center.mt-auto.mb-4.pt-5
-                        h1.d-inline-block.mt-5 Морські пригоди
+                div.row.align-items-center
+                    .middle-header.col-6-g.mx-auto.text-center
+                        h1.d-inline-block Морські пригоди
                         p.bottom-text Не важливо, чи Ваша мандрівка належить до елітного рівня чи до економваріанту, туроператор S trips потурбується, щоб Ви залишились задоволеними!
                         a.detail(href="#") детальніше
                     .container
@@ -57,7 +57,7 @@ html(lang="en")
                 .maincards.row
                     .firstcardka.col-lg-3
                         h2.cardsbosstext Про нашу компанію
-                        p.description-about-company Наша компанія пропонує ряд цікавих-розважальних послуг...
+                        p.description-about-company Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
                         a.detail.pukashka(href="#") детальніше
                         p.uvaga * - зверніть увагу, зміна ціни може залежати від курсу долара.
                     +card(cardInfo.bike)
@@ -69,6 +69,30 @@ html(lang="en")
                 hr.hr
                 .island.row-s
                     img.col-mlss(src="img/firstphoto.png", alt="фото безлюдного острова")
-                    .abaudna
-                        h2.h2-abaudna Дивовижний безлюдний острів, який зводить людей з розуму
-                        p.opis Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
+                    .abaudna.row
+                        .col
+                            h2.h2-abaudna Дивовижний безлюдний острів, який зводить людей з розуму
+                            p.opis Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
+                            div.row-6.gap
+                                a.col.detail.gar(href="#") замовити тут
+                                a.col.detial(href="#") детальніше
+                        .gray-box.col
+                            h4.price.gav 575 грн./день
+                            p.description.gaybox В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
+            .oleg
+                div.wrapper.containers
+                    .rows
+                        .col
+                            div
+                                h2 СПІЙМАЙ ХВИЛЮ
+                                h2 ЖИВИ ЯСКРАВО!
+                            p.oleg-description Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені інструктори навчать тебе вміло «піймати хвилі» та відчути себе справжнім сьорфером!
+                            a.col.detail.gar(href="#") детальніше
+                        .cols
+                            img.lapki(src="img/lapki.png", alt="Лапки")
+                            p.descr Чудова туристична фірма, що повністю виправдала мої очікування від подорожі. Я був приємно вражений екскурсіями, що для мене підібрали, працюють спражні професіонали своєї справи. 
+                            h5.h5-oleg Олег Набережний
+                            p.client клієнт
+                            img.portretone(src="img/portretone.png", alt="")
+            .week.wrapper
+                h3.special-choise-week Спеціальні пропозиції тижня
