@@ -82,7 +82,6 @@ body
   box-sizing: content-box
 
 h1
-  width: 100%
   font-size: 72px
   letter-spacing: 1px
   text-transform: uppercase
@@ -170,6 +169,8 @@ h1
   margin: 0 auto
   padding-top: 35px
   padding-bottom: 0
+  display: flex
+  justify-content: space-between
 
 .detail
   display: inline-block
@@ -188,6 +189,7 @@ h1
   box-shadow: 0px 4px 10.5px 5px rgba(193,139,1,0.24)
   background-color: #ffb700
   border: 1px solid #ffb700
+  z-index: 1
   &:hover
     color: #ffb700
     background-color: transparent
@@ -866,3 +868,34 @@ footer h2
 
 .samiy-footer > p
   margin-bottom: 0
+
+
+@media screen and (min-width: 320px)
+  h1
+    font-size: 30px
+
+  .gul
+    display: flex
+    flex-direction: column
+
+  .middle-header
+    &::before,
+    &::after
+      display: none
+
+@media screen and (min-width: 991px)
+  h1
+    font-size: 30px
+
+  .gul
+    display: flex
+    flex-direction: row
+
+  .middle-header
+    &::before,
+    &::after
+      display: block
+
+@media screen and (min-width: 1600px)
+  h1
+    font-size: 72px
