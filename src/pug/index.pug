@@ -16,7 +16,7 @@ html(lang="en")
                         |   trips
                     button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
                         span.navbar-toggler-icon
-                    #navbarSupportedContent
+                    #navbarSupportedContent.collapse.navbar-collapse
                         ul.col-6-lg.nav.gul
                             li.nav-item
                                 a.nav-link.active(aria-current='page' href='#') ГОловна
@@ -32,13 +32,13 @@ html(lang="en")
                                 a.nav-link.active(aria-current='page' href='#') відгуки
                             li.nav-item
                                 a.nav-link.active(aria-current='page' href='#') Контакти
-            .container
+            .container-fluid
                 div.row.align-items-center
                     .middle-header.col-6-g.mx-auto.text-center
                         h1.d-inline-block Морські пригоди
                         p.bottom-text Не важливо, чи Ваша мандрівка належить до елітного рівня чи до економваріанту, туроператор S trips потурбується, щоб Ви залишились задоволеними!
                         a.detail(href="#") детальніше
-                    .container
+                    .container-fluid
                         .bottom-middle-header.row
                             .col.text-center
                                 p.text-up.margin-bottom обери свій
@@ -53,9 +53,9 @@ html(lang="en")
                                             g
                                                 polygon(points="63.8,95.4 106.2,53 253,199.8 399.8,53 442.2,95.4 253,284.6")
         main#down
-            .wrapper
-                .maincards.row
-                    .firstcardka.col-lg-3
+            .wrapper.container-fluid
+                .maincards.row.container-fluid
+                    .firstcardka.col
                         h2.cardsbosstext Про нашу компанію
                         p.description-about-company Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
                         a.detail.pukashka(href="#") детальніше
@@ -79,7 +79,7 @@ html(lang="en")
                         .gray-box.col
                             h4.price.gav 575 грн./день
                             p.description.gaybox В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
-            .oleg
+            .oleg.container.fluid
                 div.wrapper.containers
                     .rows
                         .col
@@ -94,7 +94,7 @@ html(lang="en")
                             h5.h5-oleg Олег Набережний
                             p.client клієнт
                             img.portretone(src="img/portretone.png", alt="")
-            .week.wrapper
+            .week.wrapper.container-fluid
                 h3.special-choise-week Спеціальні пропозиції тижня
                 p.proposition Гарячі праозиції, по-швидше обирай і поїхали!
                 .cards.row.row-cols-1.row-cols-md-4
@@ -105,7 +105,7 @@ html(lang="en")
             div.hrplus
                 hr.hr
         footer
-            .wrapper.row-g
+            .wrapper.row-g.container-fluid
                 h2 додаткова інформація
                 .first-information.colss
                     div

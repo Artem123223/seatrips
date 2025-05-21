@@ -36,7 +36,7 @@
     }
 
 mixin card(oneCard)
-    figure.boxcard.co-2
+    figure.boxcard.col-
         figcaption.box-padding
             p.p-width.text-align
                 img.imgbox(src=oneCard.img)
@@ -99,7 +99,7 @@ mixin card(oneCard)
 
 mixin curd(twoCard)
     .col
-        .card.twoCard(style='width: 18rem;')
+        .card.twoCard
             img.card-img-top(src=twoCard.img)
             .card-body
                 h5.card-title #{twoCard.name}

@@ -76,9 +76,8 @@ body
 .puck
   background-image: url('../img/backgroundtop.png')
   background-size: cover
-  background-position: center
+  background-position: bottom
   width: 100%
-  height: 100vh
   box-sizing: content-box
 
 h1
@@ -90,8 +89,6 @@ h1
   margin-bottom: 20px
 
 .bottom-text
-  width: 528px
-  max-height: 62px
   font-size: 16px
   line-height: 24px
   color: #ffffff
@@ -101,7 +98,6 @@ h1
   margin-bottom: 29px
 
 .middle-header
-  height: 60vh
   display: flex
   flex-direction: column
   justify-content: center
@@ -135,7 +131,6 @@ h1
 
 .container
   position: relative
-  height: 100vh
 
 .pukakakashka
   position: absolute
@@ -165,7 +160,6 @@ h1
     color: #ffb700 !important
 
 .navbar
-  max-width: 70vw
   margin: 0 auto
   padding-top: 35px
   padding-bottom: 0
@@ -174,7 +168,6 @@ h1
 
 .detail
   display: inline-block
-  width: 170px
   margin: 0 auto
   font-size: 16px
   letter-spacing: 1px
@@ -218,7 +211,6 @@ h1
 .gar
   padding: 9.5px 0
   margin-right: 10px
-  width: 180px
 
 .container-fluid
   --bs-gutter-x: 0
@@ -239,7 +231,7 @@ h1
 .text-bottom
   font-size: 16px
   line-height: 24px
-  color: #333333
+  color: #333
   font-weight: 400
   font-style: italic
   text-align: center
@@ -276,7 +268,6 @@ main
   margin-bottom: 20px
 
 .firstcardka
-  max-width: 266px
 
 .uvaga
   font-size: 13px
@@ -288,8 +279,6 @@ main
   background-color: #f5f8fa
 
 .boxcard
-  width: 270px
-  height: 270px
   box-sizing: border-box
   transition: .3s ease
   overflow: hidden
@@ -316,7 +305,6 @@ main
   transform: rotate(-45deg) translate(-50%, -50%)
 
 .currency
-  width: 100%
   font-size: 18px
   line-height: 26px
   color: #333
@@ -325,9 +313,6 @@ main
   margin-bottom: 12px
 
 .maincards
-  position: relative
-  display: flex
-  justify-content: space-between
   margin-bottom: 72px
 
 .gamno
@@ -360,13 +345,6 @@ main
 .imgbox
   margin-bottom: 26px
 
-.box-padding > .p-width
-  height: 53px
-
-.box-padding > .p-width,
-.box-padding > .p-width
-  height: 51px
-
 .p-width
   margin-top: 29px
 
@@ -388,7 +366,6 @@ hr
   margin-bottom: 0
 
 .hrplus
-  width: 70vw
   margin: 0 auto
 
 .island
@@ -406,8 +383,6 @@ hr
   margin-bottom: 15px
 
 .opis
-  width: 396px
-  height: 75px
   font-size: 16px
   line-height: 24px
   color: #333333
@@ -416,24 +391,18 @@ hr
   margin-bottom: 39px
 
 .col-mlss
-  width: 444px
-  height: 291px
 
 .row-s
   display: flex
 
 .gray-box
   position: absolute
-  height: 169px
-  width: 285px
   padding: 30px 54px 36px 57px
   top: 43%
   left: 73%
   background-color: #edf2f5
 
 .gaybox
-  width: 165px
-  max-height: 61px
 
 .oleg
   background-image: url('../img/backgroundcenter.png') 
@@ -462,8 +431,6 @@ hr
   margin-bottom: 31px
 
 .oleg-description
-  width: 396px
-  height: 75px
   font-size: 16px
   line-height: 24px
   color: #fff
@@ -509,8 +476,6 @@ hr
 
 .descr
   margin: 0 auto
-  width: 423px
-  height: 95px
   font-size: 16px
   line-height: 25px
   color: #fff
@@ -533,8 +498,6 @@ hr
   margin-bottom: 12px
 
 .portretone
-  width: 86px
-  height: 86px
   box-sizing: border-box
 
 .week
@@ -683,7 +646,6 @@ footer h2
   text-transform: uppercase
   color: #333
   font-weight: 400
-  max-width: 237px
 
 .first-information,
 .second-information
@@ -694,20 +656,12 @@ footer h2
   background-size: cover
   background-position: center
   background-repeat: no-repeat
-  width: 270px
-  height: 270px
 
 .second-information
   background-image: url('../img/informationtwo.png')
   background-size: cover
   background-position: center
   background-repeat: no-repeat
-  width: 270px
-  height: 270px
-
-.icon
-  width: 34px
-  height: 42px
 
 .first-information h5,
 .second-information h5
@@ -729,8 +683,6 @@ footer h2
   padding: 0 0 0 50px
 
 .descript
-  width: 223px
-  height: 51px
   font-size: 13px
   line-height: 19px
   color: #fefefe
@@ -750,15 +702,12 @@ footer h2
   padding: 8px 15px
   border: 2px solid #ffb700
   border-radius: 25px
-  width: 110px
   transition: .3s ease
   &:hover
     background-color: #fff
 
 .button > img
   position: absolute
-  width: 15px
-  height: 11px
   top: 50%
   left: 22%
   transform: translate(-50%, -50%)
@@ -780,7 +729,6 @@ footer h2
   text-align: center
   margin: 0 auto
   margin-bottom: 20px
-  width: 149px
 
 .tel
   font-size: 18px
@@ -816,6 +764,9 @@ footer h2
   display: flex
   justify-content: space-between
 
+.row
+  flex-wrap: nowrap
+
 .portret-two
   display: flex
   flex-direction: column
@@ -845,8 +796,6 @@ footer h2
     border-bottom: 4px solid #ffb700
 
 .portrettwo
-  width: 86px
-  height: 86px
   margin: 0 auto
 
 .background-bottom
@@ -854,7 +803,6 @@ footer h2
   background-size: cover
   background-position: center
   width: 100%
-  height: 45vh
   box-sizing: content-box
 
 .samiy-footer
@@ -868,34 +816,3 @@ footer h2
 
 .samiy-footer > p
   margin-bottom: 0
-
-
-@media screen and (min-width: 320px)
-  h1
-    font-size: 30px
-
-  .gul
-    display: flex
-    flex-direction: column
-
-  .middle-header
-    &::before,
-    &::after
-      display: none
-
-@media screen and (min-width: 991px)
-  h1
-    font-size: 30px
-
-  .gul
-    display: flex
-    flex-direction: row
-
-  .middle-header
-    &::before,
-    &::after
-      display: block
-
-@media screen and (min-width: 1600px)
-  h1
-    font-size: 72px
