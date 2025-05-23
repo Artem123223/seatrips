@@ -8,93 +8,99 @@ html(lang="en")
         title Морські Пригоди, відпочивайте де забажаєте, є все на ваш вибір!
     body 
         include components/mixin
-        header.wrapper.puck
-            nav.navbar.navbar-expand-lg.bg-body-tertiary(style='background-color: transparent;' data-bs-theme='light')
-                .container-fluid.row-13-g.row-colss-5
-                    a.navbar-brand.items-center(href='index.html')
-                        img.d-inline-block.align-text-top(src='img/logo.png' alt='Logo' width='33' height='40')
-                        |   trips
-                    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-                        span.navbar-toggler-icon
-                    #navbarSupportedContent.collapse.navbar-collapse
-                        ul.col-6-lg.nav.gul
-                            li.nav-item
-                                a.nav-link.active(aria-current='page' href='#') ГОловна
-                            li.nav-item
-                                a.nav-link.active(aria-current='page' href='#') послуги
-                            li.nav-item
-                                a.nav-link.active(aria-current='page' href='#') про компанію
-                            li.nav-item
-                                a.nav-link.active(aria-current='page' href='#') Акції
-                            li.nav-item
-                                a.nav-link.active(aria-current='page' href='#') Партнери
-                            li.nav-item
-                                a.nav-link.active(aria-current='page' href='#') відгуки
-                            li.nav-item
-                                a.nav-link.active(aria-current='page' href='#') Контакти
-            .container-fluid
-                div.row.align-items-center
-                    .middle-header.col-6-g.mx-auto.text-center
-                        h1.d-inline-block Морські пригоди
-                        p.bottom-text Не важливо, чи Ваша мандрівка належить до елітного рівня чи до економваріанту, туроператор S trips потурбується, щоб Ви залишились задоволеними!
+        header.wrapper.puck.container-fluid
+            nav.container.navbar.navbar-expand-lg.mb-5(style='background-color: transparent;' data-bs-theme='light')
+                a.navbar-brand.d-flex.align-items-center(href='index.html')
+                    img.d-inline-block.align-text-top.me-2(src='img/logo.png' alt='Logo' width='33' height='40')
+                    | trips
+                button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarSupportedContent.collapse.navbar-collapse.justify-content-end
+                    ul.navbar-nav
+                        li.nav-item.me-3
+                            a.nav-link.active(aria-current='page' href='#') ГОловна
+                        li.nav-item.me-3
+                            a.nav-link.active(aria-current='page' href='#') послуги
+                        li.nav-item.me-3
+                            a.nav-link.active(aria-current='page' href='#') про компанію
+                        li.nav-item.me-3
+                            a.nav-link.active(aria-current='page' href='#') Акції
+                        li.nav-item.me-3
+                            a.nav-link.active(aria-current='page' href='#') Партнери
+                        li.nav-item.me-3
+                            a.nav-link.active(aria-current='page' href='#') відгуки
+                        li.nav-item
+                            a.nav-link.active(aria-current='page' href='#') Контакти
+            .container.pt-5
+                .row.align-items-end
+                    .middle-header.col-8.mx-auto.text-center.align-items-center.mb-5
+                        h1.d-inline-block.col-xxl-12.col-sm-6 Морські пригоди
+                        p.bottom-text.col-8 Не важливо, чи Ваша мандрівка належить до елітного рівня чи до економваріанту, туроператор S trips потурбується, щоб Ви залишились задоволеними!
                         a.detail(href="#") детальніше
-                    .container-fluid
-                        .bottom-middle-header.row
-                            .col.text-center
-                                p.text-up.margin-bottom обери свій
-                                p.text-up.margin-bottom план подорожі
-                                p.text-bottom Наша фірма -лідер на ринку у своїй сфері
-                                a(href="#down")
-                                    svg.col-12.mx-auto.svg(enable-background="new 0 0 512 512" height="20px" id="Layer_1" version="1.0" viewBox="0 0 512 512" width="18px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    .align-items-end.pt-5
+                        .text-center
+                            p.text-up.margin-bottom обери свій
+                            p.text-up.margin-bottom план подорожі
+                            p.text-bottom Наша фірма -лідер на ринку у своїй сфері
+                            a(href="#down")
+                                svg.mx-auto.svg(enable-background="new 0 0 512 512" height="20px" id="Layer_1" version="1.0" viewBox="0 0 512 512" width="18px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                                    g
                                         g
-                                            g
-                                                polygon(points="63.8,269.8 106.2,227.4 253,374.2 399.8,227.4 442.2,269.8 253,459")
+                                            polygon(points="63.8,269.8 106.2,227.4 253,374.2 399.8,227.4 442.2,269.8 253,459")
+                                    g
                                         g
-                                            g
-                                                polygon(points="63.8,95.4 106.2,53 253,199.8 399.8,53 442.2,95.4 253,284.6")
+                                            polygon(points="63.8,95.4 106.2,53 253,199.8 399.8,53 442.2,95.4 253,284.6")
         main#down
-            .wrapper.container-fluid
-                .maincards.row.container-fluid
-                    .firstcardka.col
+            .container
+                .maincards.row.gap-4
+                    .firstcardka.col-3
                         h2.cardsbosstext Про нашу компанію
                         p.description-about-company Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
                         a.detail.pukashka(href="#") детальніше
                         p.uvaga * - зверніть увагу, зміна ціни може залежати від курсу долара.
-                    +card(cardInfo.bike)
-                    +card(cardInfo.earth)
-                    +card(cardInfo.message)
-                    div.analizi
-                        a.gamno(href="#") дивитись усі плани
-                        img(src="img/arrowright.png", alt="стрілка вправо")
+                    .col 
+                        +card(cardInfo.bike)
+                    .col
+                        div 
+                            +card(cardInfo.earth)
+                        .analizi.align-items-center.ps-5.ms-3
+                            a.gamno(href="#") дивитись усі плани
+                            svg.svg-whatineed.bi.bi-arrow-right-circle(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewbox='0 0 16 16')
+                                path(fill-rule='evenodd' d='M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z')
+                    .col 
+                        +card(cardInfo.message)
                 hr.hr
                 .island.row-s
-                    img.col-mlss(src="img/firstphoto.png", alt="фото безлюдного острова")
+                    img(src="img/firstphoto.png", alt="фото безлюдного острова")
                     .abaudna.row
                         .col
                             h2.h2-abaudna Дивовижний безлюдний острів, який зводить людей з розуму
-                            p.opis Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
-                            div.row-6.gap
-                                a.col.detail.gar(href="#") замовити тут
-                                a.col.detial(href="#") детальніше
-                        .gray-box.col
-                            h4.price.gav 575 грн./день
-                            p.description.gaybox В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
-            .oleg.container.fluid
-                div.wrapper.containers
-                    .rows
+                            .row
+                                .col-6
+                                    p.opis.col Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
+                                    a.col.detail.gar.me-2(href="#") замовити тут
+                                    a.col.detial(href="#") детальніше
+                                .gray-box.col-4.text-center
+                                    h4.price.gav 575 грн./день
+                                    p.description.gaybox В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
+            .oleg
+                .container
+                    .row
                         .col
                             div
                                 h2 СПІЙМАЙ ХВИЛЮ
                                 h2 ЖИВИ ЯСКРАВО!
                             p.oleg-description Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені інструктори навчать тебе вміло «піймати хвилі» та відчути себе справжнім сьорфером!
-                            a.col.detail.gar(href="#") детальніше
-                        .cols
-                            img.lapki(src="img/lapki.png", alt="Лапки")
-                            p.descr Чудова туристична фірма, що повністю виправдала мої очікування від подорожі. Я був приємно вражений екскурсіями, що для мене підібрали, працюють спражні професіонали своєї справи. 
+                            a.col.detail.gav(href="#") детальніше
+                        .col.cols.text-center
+                            svg.lapki(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' viewbox='0 0 100 100' xml:space='preserve')
+                                path(d='M37.77,15.01H14.05c-4.08,0-7.39,3.31-7.39,7.39v23.72c0,4.08,3.31,7.39,7.39,7.39h17.03  c-1.73,9.13-10.12,16.35-20.69,17.74c-2.11,0.28-3.72,2-3.72,4.13v5.45c0,2.45,2.11,4.42,4.55,4.15  c18.9-2.04,33.62-16.66,33.92-34.42c0.01-0.09,0.03-0.18,0.03-0.28V22.39C45.16,18.32,41.85,15.01,37.77,15.01z')
+                                path(d='M85.95,15.01H62.23c-4.08,0-7.39,3.31-7.39,7.39v23.72c0,4.08,3.31,7.39,7.39,7.39h17.03  c-1.73,9.13-10.12,16.35-20.69,17.74c-2.11,0.28-3.72,2-3.72,4.13v5.45c0,2.45,2.11,4.42,4.55,4.15  c18.9-2.04,33.62-16.66,33.92-34.42c0.01-0.09,0.03-0.18,0.03-0.28V22.39C93.33,18.32,90.03,15.01,85.95,15.01z')
+                            p.descr.col-10.text-start Чудова туристична фірма, що повністю виправдала мої очікування від подорожі. Я був приємно вражений екскурсіями, що для мене підібрали, працюють спражні професіонали своєї справи. 
                             h5.h5-oleg Олег Набережний
                             p.client клієнт
                             img.portretone(src="img/portretone.png", alt="")
-            .week.wrapper.container-fluid
+            .week.container
                 h3.special-choise-week Спеціальні пропозиції тижня
                 p.proposition Гарячі праозиції, по-швидше обирай і поїхали!
                 .cards.row.row-cols-1.row-cols-md-4
@@ -102,39 +108,45 @@ html(lang="en")
                     +curd(proPosition.biker)
                     +curd(proPosition.island)
                     +curd(proPosition.surfing)
-            div.hrplus
+            .container
                 hr.hr
         footer
-            .wrapper.row-g.container-fluid
-                h2 додаткова інформація
-                .first-information.colss
-                    div
-                        img.icon(src="img/file.png", alt="файл")
-                        h5 Графік роботи готелів.xls
-                    p.size-file Розмір файла: 10Mb
-                    p.descript Розклад роботи усіх наших готелів, можете знайти за цим посиланням. Та додатково завантажити їх фото.
-                    a.button(href="#" downoload) скачати
-                        img(src="img/cloud.png", alt="хмара")
-                .second-information.colss
-                    div
-                        img.icon(src="img/file.png", alt="файл")
-                        h5 Інформація про харчування.xls
-                    p.size-file Розмір файла: 10Mb
-                    p.descript У будь-якому нашому турі включені сніданки у вартість. Якщо ж бажаєте замовити додотково, то ознайомтесь з умовами.
-                    a.button(href="#" downoload) скачати
-                        img(src="img/cloud.png", alt="хмара")
-                .portret-two.colss
-                    p.answer задати питання
-                    p.say-goodday Скажіть доброго дня 
-                        | нашому консультанту,
-                        | і ми з радістю відповімо 
-                        | на Ваші запитання
-                    div.tel
-                        img(src="img/phone.png", alt="телефон")
-                        a(href="tel:380505698511") +38 (050) 56 98 511
-                    p.name-Anna Анна Миколаївна
-                    p.consultant консультант
-                    img.portrettwo(src="img/portrettwo.png", alt="")
+            .container
+                .row
+                    h2.col додаткова інформація
+                    .col
+                        .first-information.me-3
+                            div.d-flex.align-items-center.gap-3
+                                img.icon(src="img/file.svg", alt="файл")
+                                h5 Графік роботи готелів.xls
+                            p.size-file Розмір файла: 10Mb
+                            p.descript.col-10 Розклад роботи усіх наших готелів, можете знайти за цим посиланням. Та додатково завантажити їх фото.
+                            a.button(href="#" downoload) скачати
+                                svg.bi.bi-cloud(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewbox='0 0 16 16')
+                                    path(d='M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z')
+                    .col
+                        .second-information.me-3
+                            div.d-flex.align-items-center.gap-3
+                                img.icon(src="img/file.svg", alt="файл")
+                                h5 Інформація про харчування.xls
+                            p.size-file Розмір файла: 10Mb
+                            p.descript У будь-якому нашому турі включені сніданки у вартість. Якщо ж бажаєте замовити додотково, то ознайомтесь з умовами.
+                            a.button(href="#" downoload) скачати
+                                svg.bi.bi-cloud(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewbox='0 0 16 16')
+                                   path(d='M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z')
+                    .portret-two.col
+                        p.answer задати питання
+                        p.say-goodday.col-7.mx-auto Скажіть доброго дня 
+                            | нашому консультанту,
+                            | і ми з радістю відповімо 
+                            | на Ваші запитання
+                        div.tel
+                            img(src="img/phone.png", alt="телефон")
+                            a(href="tel:380505698511") +38 (050) 56 98 511
+                        p.name-Anna Анна Миколаївна
+                        p.consultant консультант
+                        .mx-auto.d-flex.justify-content-center
+                            img(src="img/portrettwo.png", alt="")
             .background-bottom
             .samiy-footer
                 p © 2016 Cars.com All rights reserved.

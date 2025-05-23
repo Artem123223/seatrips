@@ -61,14 +61,6 @@
 body
   font-family: "Rubik"
 
-.middle-header > * 
-  display: inline-block
-  vertical-align: middle
-
-.wrapper
-  margin: 0 auto
-  width: 70vw
-
 .navbar 
   background-color: transparent !important
   box-shadow: none !important
@@ -77,8 +69,8 @@ body
   background-image: url('../img/backgroundtop.png')
   background-size: cover
   background-position: bottom
-  width: 100%
   box-sizing: content-box
+  width: auto
 
 h1
   font-size: 72px
@@ -101,36 +93,23 @@ h1
   display: flex
   flex-direction: column
   justify-content: center
+  align-items: center
   position: relative
-  &::before
-    content: ""
-    position: absolute
-    width: 362px
-    height: 36px
-    top: 18%
-    left: 50%
-    transform: translate(-50%, 50%)
-    border: none
-    border-top: 4px solid #fff
-    border-left: 4px solid #fff
-    border-right: 4px solid #fff
-    opacity: 0.300
+  &::before,
   &::after
     content: ""
-    position: absolute
-    width: 362px
-    height: 89px
-    top: 55%
-    left: 50%
-    transform: translate(-50%, 50%)
-    border: none
-    border-bottom: 4px solid #fff
+    display: block
+    width: 370px
     border-left: 4px solid #fff
     border-right: 4px solid #fff
-    opacity: 0.300
-
-.container
-  position: relative
+    opacity: 0.3
+  &::before
+    height: 36px
+    border-top: 4px solid #fff
+  &::after
+    height: 89px
+    border-bottom: 4px solid #fff
+    margin-top: -40px
 
 .pukakakashka
   position: absolute
@@ -163,8 +142,6 @@ h1
   margin: 0 auto
   padding-top: 35px
   padding-bottom: 0
-  display: flex
-  justify-content: space-between
 
 .detail
   display: inline-block
@@ -177,7 +154,7 @@ h1
   color: #fdfcfb
   font-weight: 400
   text-align: center
-  padding: 9.5px 0
+  padding: 10.5px 28px 8.5px
   border-radius: 22px
   box-shadow: 0px 4px 10.5px 5px rgba(193,139,1,0.24)
   background-color: #ffb700
@@ -209,11 +186,10 @@ h1
     background-color: #0099ff
 
 .gar
-  padding: 9.5px 0
-  margin-right: 10px
+  padding: 9.5px 26px
 
-.container-fluid
-  --bs-gutter-x: 0
+.gav
+  padding: 10.5px 32.75px 8.5px
 
 .text-up
   font-size: 36px
@@ -231,7 +207,7 @@ h1
 .text-bottom
   font-size: 16px
   line-height: 24px
-  color: #333
+  color: #333333
   font-weight: 400
   font-style: italic
   text-align: center
@@ -252,7 +228,7 @@ main
   letter-spacing: 1px
   line-height: 40px
   text-transform: uppercase
-  color: #333333
+  color: #333
   font-weight: 400
   margin-bottom: 27px
 
@@ -266,8 +242,6 @@ main
 
 .pukashka
   margin-bottom: 20px
-
-.firstcardka
 
 .uvaga
   font-size: 13px
@@ -289,19 +263,18 @@ main
 
 .star
   position: absolute
-  width: 100px
-  height: 100px
+  width: 80px
+  height: 80px
   top: 3%
-  left: -19%
+  left: -13%
   transform: rotate(45deg) translate(-50%, -50%)
   background-color: #26cb15
 
 .starimg
   position: absolute
-  width: 17px
-  height: 16px
-  top: 50%
+  top: 45%
   left: 85%
+  fill: #fff
   transform: rotate(-45deg) translate(-50%, -50%)
 
 .currency
@@ -324,16 +297,6 @@ main
   transition: .3s ease
   text-decoration: none
   margin-right: 7px
-  &:hover
-    box-shadow: 0px 0px 10.5px 1.5px rgba(193,139,1,0.24)
-
-.analizi
-  position: absolute
-  top: 100%
-  right: 22%
-  width: 200px
-  height: 11px
-  transform: translate(-50%, -50%)
 
 .price
   font-size: 24px
@@ -341,9 +304,16 @@ main
   font-weight: 400
   text-align: center
   margin-bottom: 13px
-
-.imgbox
+  
+figure:nth-child(2) > figcaption > p > .imgbox,
+figure:last-child > figcaption > p > .imgbox
+  width: 50px
+  height: 51px
   margin-bottom: 26px
+  fill: #ffb700
+
+.svg-whatineed
+  fill: #0099ff
 
 .p-width
   margin-top: 29px
@@ -357,6 +327,7 @@ main
   color: #999
   font-weight: 400
   font-family: "Rubik"
+  margin: 0
 
 hr
   border: none
@@ -366,6 +337,7 @@ hr
   margin-bottom: 0
 
 .hrplus
+  width: 70vw
   margin: 0 auto
 
 .island
@@ -390,19 +362,13 @@ hr
   font-style: italic
   margin-bottom: 39px
 
-.col-mlss
-
 .row-s
   display: flex
+  gap: 30px
 
 .gray-box
-  position: absolute
-  padding: 30px 54px 36px 57px
-  top: 43%
-  left: 73%
+  padding: 36px 54px 36px 57px
   background-color: #edf2f5
-
-.gaybox
 
 .oleg
   background-image: url('../img/backgroundcenter.png') 
@@ -442,37 +408,32 @@ hr
   display: flex
 
 .cols
-  display: flex
-  flex-direction: column
-  align-items: center
   position: relative
+  max-width: 100%
+  margin: 0 auto
+  &::before, &::after
+    content: ""
+    position: absolute
+    top: 40%
+    width: 196px
+    height: 236px
+    transform: translateY(-50%)
   &::before
-    content: ""
-    position: absolute
-    width: 200px
-    height: 255px
-    top: 41%
-    left: 5%
-    transform: translate(-50%, -50%)
-    border: none
-    border-top: 4px solid #5c6770
-    border-left: 4px solid #5c6770
-    border-bottom: 4px solid #5c6770
+    left: 4%
+    border-left: 4px solid  #5c6770
+    border-top: 4px solid  #5c6770
+    border-bottom: 4px solid  #5c6770
   &::after
-    content: ""
-    position: absolute
-    width: 200px
-    height: 255px
-    top: 41%
-    left: 95%
-    transform: translate(-50%, -50%)
-    border: none
-    border-top: 4px solid #5c6770
+    right: 4%
     border-right: 4px solid #5c6770
+    border-top: 4px solid #5c6770
     border-bottom: 4px solid #5c6770
 
 .lapki
   margin-bottom: 15px
+  width: 42px
+  height: 37px
+  fill: #ffb700
 
 .descr
   margin: 0 auto
@@ -495,10 +456,7 @@ hr
   line-height: 19px
   color: #999
   font-weight: 400
-  margin-bottom: 12px
-
-.portretone
-  box-sizing: border-box
+  margin-bottom: 0
 
 .week
   padding-top: 72px
@@ -522,31 +480,28 @@ hr
   text-align: center
   padding-bottom: 36px
 
-.cards
-  diplay: flex
-  justify-content: space-between
-
 .relative
   position: relative
 
 .absoluteimg
   position: absolute
-  width: 11px
-  height: 11px
   top: 0
   left: 0
   transform: translate(-50%, -50%)
 
-.twoCard
+.twoCard 
+  overflow: hidden
+
+.tCard 
   position: relative
   overflow: hidden
 
 .stars
   position: absolute
-  width: 100px
-  height: 100px
-  top: 3%
-  left: -18%
+  width: 90px
+  height: 90px
+  top: 4%
+  left: -15%
   z-index: 1
   transform: rotate(45deg) translate(-50%, -50%)
   background-color: #26cb15
@@ -555,8 +510,9 @@ hr
   position: absolute
   width: 17px
   height: 16px
-  top: 45%
-  left: 85%
+  top: 40%
+  left: 83%
+  fill: #fff
   transform: rotate(-45deg) translate(-50%, -50%)
 
 .card-title
@@ -589,11 +545,9 @@ hr
   text-align: center
   position: relative
   margin-right: 15px
+  transform: scale(1)
   &:hover
-    background-color: #ffb700
-    padding: 5px
-    border-radius: 15px
-    color: #fff
+    transform: scale(1.1)
 
 .absoluteimg
   position: absolute
@@ -620,8 +574,8 @@ hr
 .biker
   position: absolute
   width: 60px
-  height: 205px
-  top: 26.1%
+  height: 110%
+  top: 50%
   left: 10%
   z-index: 0
   background-color: #0099ff
@@ -670,11 +624,6 @@ footer h2
   color: #fff
   font-weight: 400
 
-.first-information div,
-.second-information div
-  display: flex
-  gap: 17px
-
 .size-file
   font-size: 13px
   line-height: 19px
@@ -699,15 +648,17 @@ footer h2
   font-weight: 400
   text-align: right
   position: relative
-  padding: 8px 15px
+  padding: 10px 17px 10px 35px
   border: 2px solid #ffb700
   border-radius: 25px
   transition: .3s ease
   &:hover
     background-color: #fff
 
-.button > img
+.button > svg
   position: absolute
+  width: 15px
+  height: 15px
   top: 50%
   left: 22%
   transform: translate(-50%, -50%)
@@ -727,7 +678,6 @@ footer h2
   color: #999
   font-weight: 400
   text-align: center
-  margin: 0 auto
   margin-bottom: 20px
 
 .tel
@@ -759,41 +709,42 @@ footer h2
   font-weight: 400
   font-family: "PT Sans"
   text-align: center
+  margin-bottom: 0
 
 .row-g
   display: flex
   justify-content: space-between
 
-.row
-  flex-wrap: nowrap
+.portretone
+  box-sizing: border-box
+  border-radius: 40px
+  bpx-shadow: 0px 4px 10.5px 5px rgba(3,20,31,0.05)
 
 .portret-two
-  display: flex
-  flex-direction: column
-  justify-content: center
+  margin: 0 auto
   position: relative
-  &::before
+  max-width: 100%
+  &::before, &::after
     content: ""
     position: absolute
+    top: 42%
     width: 44px
     height: 261px
-    top: 45%
-    left: -7%
-    transform: translate(-50%, -50%)
+    transform: translateY(-50%)
+  &::before
+    left: 2%
     border-top: 4px solid #ffb700
     border-left: 4px solid #ffb700
     border-bottom: 4px solid #ffb700
   &::after
-    content: ""
-    position: absolute
-    width: 44px
-    height: 261px
-    top: 45%
-    left: 105%
-    transform: translate(-50%, -50%)
+    right: 2%
     border-top: 4px solid #ffb700
     border-right: 4px solid #ffb700
     border-bottom: 4px solid #ffb700
+
+.icon
+  width: 34px
+  height: 42px
 
 .portrettwo
   margin: 0 auto
@@ -802,8 +753,8 @@ footer h2
   background-image: url('../img/backgroundbottom.png')
   background-size: cover
   background-position: center
-  width: 100%
   box-sizing: content-box
+  height: 45vh
 
 .samiy-footer
   font-size: 13px
