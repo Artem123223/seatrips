@@ -1,3 +1,5 @@
+@import components/mixin
+  
 @font-face
   font-family: 'Rubik'
   src: url('../fonts/Rubik-Bold.woff2') format("woff2"), url('../fonts/Rubik-Bold.woff') format("woff"), url('../fonts/Rubik-Bold.ttf') format("truetype")
@@ -61,10 +63,6 @@
 body
   font-family: "Rubik"
 
-.navbar 
-  background-color: transparent !important
-  box-shadow: none !important
-
 .puck
   background-image: url('../img/backgroundtop.png')
   background-size: cover
@@ -79,6 +77,10 @@ h1
   color: #ffffff
   font-weight: 400
   margin-bottom: 20px
+  +media(320)
+    font-size: 52px
+  +media(768)
+    font-size: 72px
 
 .bottom-text
   font-size: 16px
@@ -98,11 +100,14 @@ h1
   &::before,
   &::after
     content: ""
-    display: block
     width: 370px
     border-left: 4px solid #fff
     border-right: 4px solid #fff
     opacity: 0.3
+    +media(320)
+      display: none
+    +media(420)
+      display: block
   &::before
     height: 36px
     border-top: 4px solid #fff
@@ -269,13 +274,26 @@ main
   left: -13%
   transform: rotate(45deg) translate(-50%, -50%)
   background-color: #26cb15
+  +media(320)
+    top: 3%
+    left: -13.5%
+  +media(420)
+    top: 3%
+    left: -13%
+  
 
 .starimg
   position: absolute
-  top: 45%
+  top: 47%
   left: 85%
   fill: #fff
   transform: rotate(-45deg) translate(-50%, -50%)
+
+.img-first
+  +media(320)
+    width: 100%
+  +media(420)
+    width: auto
 
 .currency
   font-size: 18px
@@ -347,12 +365,21 @@ hr
 
 .h2-abaudna
   font-size: 36px
-  line-height: 42px
   text-transform: uppercase
   color: #333
   font-weight: 400
   padding-top: 10px
   margin-bottom: 15px
+  +media(320)
+    font-size: 25px
+  +media(420)
+    font-size: 36px
+
+.margin-need
+  +media(320)
+    margin-bottom: 15px
+  +media(500)
+    margin-bottom: 0
 
 .opis
   font-size: 16px
@@ -364,6 +391,9 @@ hr
 
 .row-s
   display: flex
+  flex-wrap: wrap
+  +media(768)
+    flex-wrap: nowrap
 
 .gray-box
   padding: 36px 30px 36px 30px
@@ -378,22 +408,28 @@ hr
   padding: 90px 0 100px
 
 .oleg h2:first-child
-  font-size: 56px
   letter-spacing: 2px
-  line-height: 66px
   text-transform: uppercase
   color: #fff
   font-weight: 400
   margin-bottom: 0
+  +media(320)
+    font-size: 46px
+  +media(409)
+    font-size: 56px
+    line-height: 66px
 
 .oleg h2:last-child
-  font-size: 56px
   letter-spacing: 2px
-  line-height: 66px
   text-transform: uppercase
   color: #0099ff
   font-weight: 400
   margin-bottom: 31px
+  +media(320)
+    font-size: 46px
+  +media(409)
+    font-size: 56px
+    line-height: 66px
 
 .oleg-description
   font-size: 16px
@@ -410,6 +446,10 @@ hr
   position: relative
   max-width: 100%
   margin: 0 auto
+  +media(320)
+    padding-top: 25px
+  +media(500)
+    padding-top: 0
   &::before, &::after
     content: ""
     position: absolute
@@ -422,11 +462,19 @@ hr
     border-left: 4px solid  #5c6770
     border-top: 4px solid  #5c6770
     border-bottom: 4px solid  #5c6770
+    +media(320)
+      display: none
+    +media(550)
+      display: block
   &::after
     right: 4%
     border-right: 4px solid #5c6770
     border-top: 4px solid #5c6770
     border-bottom: 4px solid #5c6770
+    +media(320)
+      display: none
+    +media(550)
+      display: block
 
 .lapki
   margin-bottom: 15px
