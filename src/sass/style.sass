@@ -364,10 +364,9 @@ hr
 
 .row-s
   display: flex
-  gap: 30px
 
 .gray-box
-  padding: 36px 54px 36px 57px
+  padding: 36px 30px 36px 30px
   background-color: #edf2f5
 
 .oleg
@@ -434,6 +433,13 @@ hr
   width: 42px
   height: 37px
   fill: #ffb700
+
+.analizi
+  transform: scale(1)
+  transition: .3s ease
+  &:hover
+    transform: scale(1.1)
+    cursor: pointer 
 
 .descr
   margin: 0 auto
@@ -541,13 +547,16 @@ hr
   text-decoration: none
   color: #ffb700
   font-weight: 400
-  transition: .3s ease
   text-align: center
   position: relative
   margin-right: 15px
+
+.hover-a
+  transition: .3s ease
   transform: scale(1)
   &:hover
     transform: scale(1.1)
+    cursor: pointer
 
 .absoluteimg
   position: absolute
@@ -576,7 +585,7 @@ hr
   width: 60px
   height: 110%
   top: 50%
-  left: 10%
+  left: 9.5%
   z-index: 0
   background-color: #0099ff
   transform: translate(-50%, -50%)
