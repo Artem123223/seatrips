@@ -80,6 +80,8 @@ h1
   +media(320)
     font-size: 52px
   +media(768)
+    font-size: 62px
+  +media(1200)
     font-size: 72px
 
 .bottom-text
@@ -105,9 +107,9 @@ h1
     border-right: 4px solid #fff
     opacity: 0.3
     +media(320)
-      display: none
-    +media(420)
-      display: block
+      width: 300px
+    +media(500)
+      width: 370px
   &::before
     height: 36px
     border-top: 4px solid #fff
@@ -220,7 +222,7 @@ h1
 
 .svg
   margin-bottom: 42px
-  transition: .5s ease
+  transition: .3s ease
   &:hover
     cursor: pointer
     fill: #ffb700
@@ -270,29 +272,50 @@ main
   position: absolute
   width: 80px
   height: 80px
-  top: 3%
+  top: 4%
   left: -13%
   transform: rotate(45deg) translate(-50%, -50%)
   background-color: #26cb15
   +media(320)
     top: 3%
     left: -13.5%
-  +media(420)
+  +media(375)
     top: 3%
+    left: -12%
+  +media(425)
+    top: 5%
+    left: -10%
+  +media(768)
+    top: 5%
+    left: -12%
+  +media(991)
+    top: 4%
+    left: -19%
+  +media(1200)
+    top: 4%
     left: -13%
-  
 
 .starimg
   position: absolute
-  top: 47%
+  top: 45%
   left: 85%
   fill: #fff
   transform: rotate(-45deg) translate(-50%, -50%)
+  +media(768)
+    top: 43%
+  +media(1024)
+    top: 42%
 
 .img-first
+  width: 100%
+  min-height: 150px
+  max-height: 300px
+  object-fit: cover
+  object-position: 50% 75%
+  vertical-align: bottom
   +media(320)
     width: 100%
-  +media(420)
+  +media(1200)
     width: auto
 
 .currency
@@ -377,7 +400,7 @@ hr
 
 .margin-need
   +media(320)
-    margin-bottom: 15px
+    margin-bottom: 25px
   +media(500)
     margin-bottom: 0
 
@@ -393,7 +416,10 @@ hr
   display: flex
   flex-wrap: wrap
   +media(768)
+    display: block
     flex-wrap: nowrap
+  +media(1200)
+    display: flex
 
 .gray-box
   padding: 36px 30px 36px 30px
@@ -447,7 +473,7 @@ hr
   max-width: 100%
   margin: 0 auto
   +media(320)
-    padding-top: 25px
+    padding-top: 40px
   +media(500)
     padding-top: 0
   &::before, &::after
@@ -457,24 +483,40 @@ hr
     width: 196px
     height: 236px
     transform: translateY(-50%)
+    +media(320)
+      top: 49%
+      width: 90px
+      height: 335px
+    +media(375)
+      top: 49%
+      width: 90px
+      height: 315px
+    +media(425)
+      width: 90px
+      height: 285px
+      top: 48%
+    +media(768)
+      width: 90px
+      height: 330px
+      top: 36%
+    +media(992)
+      top: 32%
+      width: 90px
+      height: 290px
+    +media(1200)
+      top: 43%
+      width: 196px
+      height: 260px
   &::before
     left: 4%
     border-left: 4px solid  #5c6770
     border-top: 4px solid  #5c6770
     border-bottom: 4px solid  #5c6770
-    +media(320)
-      display: none
-    +media(550)
-      display: block
   &::after
     right: 4%
     border-right: 4px solid #5c6770
     border-top: 4px solid #5c6770
     border-bottom: 4px solid #5c6770
-    +media(320)
-      display: none
-    +media(550)
-      display: block
 
 .lapki
   margin-bottom: 15px
@@ -559,6 +601,20 @@ hr
   z-index: 1
   transform: rotate(45deg) translate(-50%, -50%)
   background-color: #26cb15
+  +media(375)
+    left: -13%
+  +media(425)
+    top: 3%
+    left: -26%
+  +media(500)
+    left: -15%
+    top: 4%
+  +media(1024)
+    left: -23%
+    top: 3%
+  +media(1200)
+    top: 4%
+    left: -15%
 
 .starimgs
   position: absolute
@@ -568,12 +624,28 @@ hr
   left: 83%
   fill: #fff
   transform: rotate(-45deg) translate(-50%, -50%)
+  +media(375)
+    top: 38%
+  +media(425)
+    top: 42%
+  +media(500)
+    top: 40%
+  +media(1024)
+    top: 43%
+    left: 85%
+  +media(1200)
+    top: 40%
+    left: 83%
 
 .card-title
   font-size: 18px
   line-height: 26px
-  color: #333333
+  color: #333
   font-weight: 400
+  +media(320)
+    line-height: 20px
+  +media(500)
+    line-height: 26px
 
 .card-text
   font-size: 13px
@@ -587,6 +659,12 @@ hr
   color: #0099ff
   font-weight: 400
   margin-bottom: 0
+  +media(425)
+    font-size: 14px
+    line-height: 24px
+  +media(1200)
+    font-size: 24px
+    line-height: 44px
 
 .btns
   font-size: 13px
@@ -597,7 +675,10 @@ hr
   font-weight: 400
   text-align: center
   position: relative
-  margin-right: 15px
+  +media(425)
+    margin-right: 0
+  +media(500)
+    margin-right: 15px
 
 .hover-a
   transition: .3s ease
@@ -637,6 +718,16 @@ hr
   z-index: 0
   background-color: #0099ff
   transform: translate(-50%, -50%)
+  +media(320)
+    left: 10.25%
+  +media(375)
+    left: 8.4%
+  +media(425)
+    left: 11%
+  +media(768)
+    left: 8%
+  +media(900)
+    left: 9.5%
 
 .superimg
   position: absolute
@@ -645,6 +736,18 @@ hr
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
+  +media(425)
+    top: 50%
+    left: 57%
+  +media(500)
+    top: 50%
+    left: 50%
+  +media(1024)
+    top: 50%
+    left: 55%
+  +media(1200)
+    top: 50%
+    left: 50%
 
 footer
   background-color: #f5f8fa
@@ -657,6 +760,12 @@ footer h2
   text-transform: uppercase
   color: #333
   font-weight: 400
+  +media(320)
+    font-size: 20px
+    line-height: 25px
+  +media(1200)
+    font-size: 36px
+    line-height: 40px
 
 .first-information,
 .second-information
@@ -788,6 +897,22 @@ footer h2
     width: 44px
     height: 261px
     transform: translateY(-50%)
+    +media(375)
+      height: 245px
+    +media(500)
+      height: 261px
+    +media(768)
+      top: 43%
+      height: 280px
+      width: 30px
+    +media(1024)
+      width: 44px
+      top: 42%
+      height: 261px
+    +media(1200)
+      top: 42.5%
+      width: 44px
+      height: 261px
   &::before
     left: 2%
     border-top: 4px solid #ffb700
@@ -819,9 +944,9 @@ footer h2
 .background-bottom
   background-image: url('../img/backgroundbottom.png')
   background-size: cover
-  background-position: center
+  background-position: center top
   box-sizing: content-box
-  height: 45vh
+  height: 55vh
 
 .samiy-footer
   font-size: 13px
