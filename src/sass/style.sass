@@ -152,7 +152,6 @@ h1
 
 .detail
   display: inline-block
-  margin: 0 auto
   font-size: 16px
   letter-spacing: 1px
   text-transform: uppercase
@@ -329,6 +328,13 @@ main
 .maincards
   margin-bottom: 72px
 
+.cards,
+.chuk
+  +media(320)
+    gap: 15px
+  +media(992)
+    gap: 0
+
 .gamno
   font-size: 12px
   letter-spacing: 0px
@@ -397,12 +403,6 @@ hr
     font-size: 25px
   +media(420)
     font-size: 36px
-
-.margin-need
-  +media(320)
-    margin-bottom: 25px
-  +media(500)
-    margin-bottom: 0
 
 .opis
   font-size: 16px
@@ -502,7 +502,7 @@ hr
     +media(992)
       top: 32%
       width: 90px
-      height: 290px
+      height: 285px
     +media(1200)
       top: 43%
       width: 196px
@@ -530,6 +530,12 @@ hr
   &:hover
     transform: scale(1.1)
     cursor: pointer 
+  +media(320)
+    transform: translate(0, 1400%)
+  +media(500)
+    transform: translate(80%, 100%)
+  +media(992)
+    transform: translate(5%, 0)
 
 .descr
   margin: 0 auto
@@ -604,8 +610,8 @@ hr
   +media(375)
     left: -13%
   +media(425)
-    top: 3%
-    left: -26%
+    top: 4%
+    left: -12%
   +media(500)
     left: -15%
     top: 4%
@@ -708,6 +714,10 @@ hr
   display: flex
   align-items: center
   justify-content: space-between
+  +media(320)
+    justify-content: space-around
+  +media(992)
+    justify-content: space-between
 
 .biker
   position: absolute
@@ -723,7 +733,7 @@ hr
   +media(375)
     left: 8.4%
   +media(425)
-    left: 11%
+    left: 7%
   +media(768)
     left: 8%
   +media(900)
@@ -738,7 +748,7 @@ hr
   transform: translate(-50%, -50%)
   +media(425)
     top: 50%
-    left: 57%
+    left: 50%
   +media(500)
     top: 50%
     left: 50%
@@ -763,6 +773,7 @@ footer h2
   +media(320)
     font-size: 20px
     line-height: 25px
+    text-align: center
   +media(1200)
     font-size: 36px
     line-height: 40px
@@ -902,13 +913,13 @@ footer h2
     +media(500)
       height: 261px
     +media(768)
-      top: 43%
-      height: 280px
-      width: 30px
+      top: 40.5%
+      height: 290px
+      width: 20px
     +media(1024)
       width: 44px
-      top: 42%
-      height: 261px
+      top: 42.5%
+      height: 275px
     +media(1200)
       top: 42.5%
       width: 44px
