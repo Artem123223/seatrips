@@ -283,6 +283,30 @@ main
   left: -15%
   transform: rotate(45deg)
   background-color: #26cb15
+  +media(320)
+    top: -15%
+    left: -13%
+  +media(375)
+    top: -15%
+    left: -11%
+  +media(425)
+    top: -15%
+    left: -10%
+  +media(480)
+    top: -15%
+    left: -9%
+  +media(550)
+    top: -15%
+    left: -8%
+  +media(768)
+    top: -15%
+    left: -6%
+  +media(991)
+    top: -14%
+    left: -20%
+  +media(1200)
+    top: -14%
+    left: -16%
 
 .starimg
   position: absolute
@@ -324,7 +348,7 @@ main
 .chuk
   +media(320)
     gap: 10px
-  +media(992)
+  +media(768)
     gap: 0
 
 .chuk
@@ -539,10 +563,10 @@ hr
   fill: #ffb700
 
 .analizi
-  transform: scale(1)
+  transform: translate(0, 0) scale(1)
   transition: .3s ease
   &:hover
-    transform: translate(4%, 0) scale(1.1)
+    transform: translate(2%, 0) scale(1.1)
     cursor: pointer
 
 .descr
@@ -623,6 +647,9 @@ hr
   +media(500)
     left: -10%
     top: 4%
+  +media(510)
+    top: 4%
+    left: -9.25%
   +media(768)
     left: -15%
     top: 5%
@@ -676,6 +703,8 @@ hr
     line-height: 20px
   +media(500)
     line-height: 26px
+  +media(1024)
+    font-size: 14px
 
 .card-text
   font-size: 13px
@@ -693,10 +722,10 @@ hr
   color: #0099ff
   font-weight: 400
   margin-bottom: 0
-  +media(425)
+  +media(320)
     font-size: 14px
     line-height: 24px
-  +media(1200)
+  +media(1100)
     font-size: 24px
     line-height: 44px
 
@@ -744,6 +773,8 @@ hr
   justify-content: space-between
   +media(320)
     justify-content: space-around
+  +media(425)
+    justify-content: space-between
   +media(992)
     justify-content: space-between
 
@@ -755,6 +786,12 @@ hr
   left: 0
   z-index: 0
   background-color: #0099ff
+  +media(1024)
+    top: 0
+    left: -5%
+  +media(1200)
+    top: 0
+    left: 0
 
 .superimg
   position: absolute
@@ -774,7 +811,7 @@ hr
     left: 53%
   +media(1024)
     top: 50%
-    left: 57%
+    left: 58.5%
   +media(1200)
     top: 50%
     left: 50%
@@ -874,7 +911,6 @@ footer h2
   color: #333
   font-weight: 400
   text-align: center
-  margin-bottom: 17px
   position: absolute
   top: 0
   left: 50%
@@ -915,6 +951,18 @@ footer h2
   text-align: center
   margin-bottom: 0px
 
+.w-nned
+  +media(320)
+    width: 60%
+  +media(576)
+    width: 35%
+  +media(1024)
+    width: 27%
+  +media(1200)
+    width: 23%
+  +media(1400)
+    width: 20%
+
 .consultant
   font-size: 13px
   line-height: 19px
@@ -953,6 +1001,10 @@ footer h2
     border-top: 4px solid #ffb700
     border-right: 4px solid #ffb700
     border-bottom: 4px solid #ffb700
+  +media(320)
+    min-width: 45%
+  +media(768)
+    min-width: auto
 
 .icon
   width: 34px
