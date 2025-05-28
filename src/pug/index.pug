@@ -33,7 +33,7 @@ html(lang="en")
                             a.nav-link.active(aria-current='page' href='#') Контакти
             .container.pt-5
                 .row.align-items-end
-                    .middle-header.col-8.mx-auto.text-center.align-items-center.mb-5
+                    .middle-header.col-md-12.col-lg-8.mx-auto.text-center.align-items-center.mb-5
                         h1.d-inline-block Морські пригоди
                         p.bottom-text.col-xl-8.col-sm-10 Не важливо, чи Ваша мандрівка належить до елітного рівня чи до економваріанту, туроператор S trips потурбується, щоб Ви залишились задоволеними!
                         a.detail(href="#") детальніше
@@ -61,11 +61,11 @@ html(lang="en")
                             p.uvaga * - зверніть увагу, зміна ціни може залежати від курсу долара.
                         .col
                             .row.gap-2
-                                .col-xs-12.col-lg
+                                .col-xs-12.col-md-4.col-lg
                                     +card(cardInfo.bike)
-                                .col-xs-12.col-lg
+                                .col-xs-12.col-md.col-lg
                                     +card(cardInfo.earth)
-                                .col-xs-12.col-lg
+                                .col-xs-12.col-md
                                     +card(cardInfo.message)
                             .row 
                                 .col.w-25.mx-auto
@@ -75,19 +75,19 @@ html(lang="en")
                                             path(fill-rule='evenodd' d='M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z')
                 hr.hr
                 .island.container.row-s
-                    img.img-first.me-3.mt-4.mb-2(src="img/firstphoto.png", alt="фото безлюдного острова")
+                    img.img-first.me-lg-3.mt-4.mb-2(src="img/firstphoto.png", alt="фото безлюдного острова")
                     .abaudna.row
                         .col
                             h2.h2-abaudna.pt-3 Дивовижний безлюдний острів, який зводить людей з розуму
                             .row
-                                .col-sm-12.col-md-12.col-lg-7.me-3
+                                .col-sm-12.col-md-6.col-lg-7.me-3
                                     p.opis.col Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
-                                    .margin-need.row.ms-xs-2.ms-xl-1.gap-2
-                                        a.col-sm-6.detail.gar.mb-2(href="#") замовити тут
-                                        a.col.col-xl.detial.mb-2(href="#") детальніше
-                                .gray-box.col-md-12.col-lg-4.text-center.col-sm-12  
+                                    .margin-need.row.ms-xs-2.ms-lg-1.ms-xl-1.gap-3.mb-md-3.mb-lg-0
+                                        a.col-sm-6.col-md-6.col-lg-6.detail.gar(href="#") замовити тут
+                                        a.col-lg.col-md.col-xl.detial(href="#") детальніше
+                                .gray-box.col-md-5.col-lg-4.text-center.col-sm-12  
                                     h4.price.e 575 грн./день
-                                    p.description.gaybox В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
+                                    p.descriptions.gaybox В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
             .oleg
                 .container
                     .row.puj

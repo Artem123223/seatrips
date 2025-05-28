@@ -173,6 +173,12 @@ h1
     background-color: transparent
     border: 1px solid #ffb700
     box-shadow: 0 0 0 0 rgba(193,139,1,0.24)
+  +media(320)
+    font-size: 13px
+    padding: 10.5px 20px 9.5px
+  +media(1200)
+    font-size: 16px
+    padding: 10.5px 28px 9.5px
 
 .detial
   display: inline-block
@@ -192,6 +198,12 @@ h1
     color: #fff
     border: 2px solid #fff
     background-color: #0099ff
+  +media(320)
+    font-size: 13px
+    padding: 9.5px 23px 9.5px
+  +media(1200)
+    font-size: 16px
+    padding: 9.5px 35px 9.5px
 
 .gar
   padding: 9.5px 26px
@@ -299,14 +311,16 @@ main
     top: -15%
     left: -8%
   +media(768)
-    top: -15%
-    left: -6%
+    top: -13%
+    left: -17%
   +media(991)
     top: -14%
     left: -20%
+  +media(995)
+    top: -12.5%
   +media(1200)
     top: -14%
-    left: -16%
+    left: -16.5%
 
 .starimg
   position: absolute
@@ -314,9 +328,24 @@ main
   left: 70%
   fill: #fff
   transform: rotate(-45deg)
-  +media(1440)
-    top: 38%
-    left: 73%
+  +media(565)
+    top: 43%
+    left: 71%
+  +media(768)
+    top: 40%
+    left: 67%
+  +media(1000)
+    top: 44%
+    left: 68%
+  +media(1200)
+    top: 45%
+    left: 69%
+  +media(1400)
+    top: 40%
+    left: 71%
+  +media(1800)
+    top: 44%
+    left: 70%
   +media(2560)
     left: 73%
     top: 40%
@@ -330,8 +359,20 @@ main
   vertical-align: bottom
   +media(320)
     width: 100%
+  +media(995)
+    max-width: auto
+    height: 250px
   +media(1200)
     width: auto
+
+.row-s
+  display: flex
+  flex-wrap: wrap
+  +media(768)
+    display: block
+  +media(995)
+    display: flex
+    flex-wrap: nowrap
 
 .currency
   font-size: 18px
@@ -355,6 +396,9 @@ main
   +media(450)
     display: flex
     flex-direction: column
+  +media(741)
+    display: flex
+    flex-direction: row
   +media(768)
     display: flex
     flex-direction: row
@@ -375,6 +419,10 @@ main
   font-weight: 400
   text-align: center
   margin-bottom: 13px
+  +media(320)
+    font-size: 20px
+  +media(1200)
+    font-size: 24px
   
 figure:nth-child(2) > figcaption > p > .imgbox,
 figure:last-child > figcaption > p > .imgbox
@@ -397,9 +445,19 @@ figure:last-child > figcaption > p > .imgbox
   line-height: 19px
   color: #999
   font-weight: 400
-  font-family: "Rubik"
   margin: 0
-  min-height: 76px
+  +media(1000)
+    min-height: 114px
+  +media(1200)
+    min-height: 76px
+
+.descriptions
+  font-size: 13px
+  line-height: 20px
+  color: #999
+  font-weight: 400
+  text-align: center
+  max-height: 61px
 
 hr
   border: none
@@ -425,8 +483,8 @@ hr
   padding-top: 10px
   margin-bottom: 15px
   +media(320)
-    font-size: 25px
-  +media(420)
+    font-size: 24px
+  +media(1200)
     font-size: 36px
 
 .opis
@@ -436,15 +494,12 @@ hr
   font-weight: 400
   font-style: italic
   margin-bottom: 39px
-
-.row-s
-  display: flex
-  flex-wrap: wrap
-  +media(768)
-    display: block
-    flex-wrap: nowrap
+  +media(320)
+    font-size: 14px
+    line-height: 21px
   +media(1200)
-    display: flex
+    font-size: 16px
+    line-height: 24px
 
 .gray-box
   padding: 36px 30px 36px 30px
@@ -645,14 +700,17 @@ hr
     top: 4%
     left: -12%
   +media(500)
-    left: -10%
-    top: 4%
+    left: -9.5%
+    top: 3%
   +media(510)
-    top: 4%
+    top: 3.5%
     left: -9.25%
   +media(768)
-    left: -15%
-    top: 5%
+    left: -14%
+    top: 4.5%
+  +media(991)
+    left: -20%
+    top: 4%
   +media(1000)
     left: -20%
     top: 3%
@@ -661,7 +719,7 @@ hr
     top: 3%
   +media(1200)
     top: 4%
-    left: -18%
+    left: -17%
   +media(1440)
     top: 4%
     left: -15%
@@ -684,8 +742,12 @@ hr
     top: 40%
   +media(550)
     top: 33%
+  +media(991)
+    top: 44%
+    left: 80%
   +media(1000)
     top: 45%
+    left: 83%
   +media(1024)
     top: 43%
     left: 85%
@@ -701,10 +763,13 @@ hr
   min-height: 17px
   +media(320)
     line-height: 20px
+    font-size: 14px
   +media(500)
     line-height: 26px
   +media(1024)
     font-size: 14px
+  +media(1200)
+    font-size: 18px
 
 .card-text
   font-size: 13px
@@ -712,6 +777,11 @@ hr
   color: #999
   font-weight: 400
   min-height: 76px
+  +media(991)
+    min-height: 95px
+  +media(1200)
+    min-height: 76px
+
 
 .card-img-top
   min-height: 190px
@@ -725,7 +795,7 @@ hr
   +media(320)
     font-size: 14px
     line-height: 24px
-  +media(1100)
+  +media(1200)
     font-size: 24px
     line-height: 44px
 
@@ -771,12 +841,6 @@ hr
   display: flex
   align-items: center
   justify-content: space-between
-  +media(320)
-    justify-content: space-around
-  +media(425)
-    justify-content: space-between
-  +media(992)
-    justify-content: space-between
 
 .biker
   position: absolute
@@ -786,6 +850,8 @@ hr
   left: 0
   z-index: 0
   background-color: #0099ff
+  +media(500)
+    left: 0
   +media(1024)
     top: 0
     left: -5%
@@ -953,15 +1019,21 @@ footer h2
 
 .w-nned
   +media(320)
-    width: 60%
+    width: 30%
   +media(576)
     width: 35%
+  +media(768)
+    width: 23.5%
+  +media(991)
+    width: 27%
   +media(1024)
     width: 27%
   +media(1200)
     width: 23%
   +media(1400)
     width: 20%
+  +media(1800)
+    width: 21.25%
 
 .consultant
   font-size: 13px
@@ -991,6 +1063,10 @@ footer h2
     top: 0
     width: 44px
     height: 100%
+    +media(768)
+      width: 35px
+    +media(991)
+      width: 44px
   &::before
     left: 2%
     border-top: 4px solid #ffb700
@@ -1003,8 +1079,10 @@ footer h2
     border-bottom: 4px solid #ffb700
   +media(320)
     min-width: 45%
+    margin-top: 20px
   +media(768)
     min-width: auto
+    margin-top: 0
 
 .icon
   width: 34px
