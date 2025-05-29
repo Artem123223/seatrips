@@ -214,6 +214,12 @@ h1
 .gave
   margin-bottom: 16px
 
+.meras
+  +media(320)
+    margin-top: 15px
+  +media(768)
+    margin-top: 0
+
 .text-up
   font-size: 36px
   letter-spacing: 1px
@@ -310,6 +316,9 @@ main
   +media(550)
     top: -15%
     left: -8%
+  +media(576)
+    top: -16%
+    left: -8%
   +media(768)
     top: -13%
     left: -17%
@@ -328,9 +337,21 @@ main
   left: 70%
   fill: #fff
   transform: rotate(-45deg)
+  +media(350)
+    top: 39%
+    left: 67%
+  +media(500)
+    top: 37%
+    left: 67%
+  +media(514)
+    top: 36%
+    left: 69%
   +media(565)
     top: 43%
     left: 71%
+  +media(576)
+    top: 40%
+    left: 68%
   +media(768)
     top: 40%
     left: 67%
@@ -346,6 +367,12 @@ main
   +media(1800)
     top: 44%
     left: 70%
+  +media(1900)
+    top: 42%
+    left: 71%
+  +media(2020)
+    top: 40%
+    left: 71%
   +media(2560)
     left: 73%
     top: 40%
@@ -385,21 +412,29 @@ main
 .maincards
   margin-bottom: 72px
 
-.cards,
+.cards
+  +media(320)
+    gap: 10px
+  +media(687)
+    gap: 0
+
 .chuk
   +media(320)
     gap: 10px
-  +media(768)
+  +media(576)
     gap: 0
+
+.puckh
+  +media(687)
+    max-width: 50%
+  +media(992)
+    max-width: auto
 
 .chuk
   +media(450)
     display: flex
     flex-direction: column
-  +media(741)
-    display: flex
-    flex-direction: row
-  +media(768)
+  +media(550)
     display: flex
     flex-direction: row
 
@@ -704,7 +739,16 @@ hr
     top: 3%
   +media(510)
     top: 3.5%
-    left: -9.25%
+    left: -9.75%
+  +media(530)
+    top: 3.5%
+    left: -9.5%
+  +media(550)
+    top: 3.5%
+    left: -9%
+  +media(687)
+    top: 4.5%
+    left: -18%
   +media(768)
     left: -14%
     top: 4.5%
@@ -742,6 +786,9 @@ hr
     top: 40%
   +media(550)
     top: 33%
+  +media(687)
+    top: 40%
+    left: 81%
   +media(991)
     top: 44%
     left: 80%
@@ -1019,7 +1066,9 @@ footer h2
 
 .w-nned
   +media(320)
-    width: 30%
+    width: 57%
+  +media(500)
+    width: 34%
   +media(576)
     width: 35%
   +media(768)
@@ -1106,7 +1155,7 @@ footer h2
   background-size: cover
   background-position: center top
   box-sizing: content-box
-  height: 55vh
+  height: 40vh
 
 .samiy-footer
   font-size: 13px
