@@ -53,7 +53,8 @@ mixin card(oneCard)
 -
     let proPosition = {
         romantic: {
-            img: "img/cardone.png",
+            img: "img/cardone.jpg",
+            webpimg: "img/cardone.webp",
             name: "Романтична подорож на 2",
             description: [
                 'Подорож у найромантичніші',
@@ -64,7 +65,8 @@ mixin card(oneCard)
             isBike: none
         },
         biker: {
-            img: "img/cardtwo.png",
+            img: "img/cardtwo.jpg",
+            webpimg: "img/cardtwo.webp",
             name: "Велотур",
             description: [
                 'Бажаєте прокататись з вітерцем, та',
@@ -75,7 +77,8 @@ mixin card(oneCard)
             isBike: true
         },
         island: {
-            img: "img/cardthree.png",
+            img: "img/cardthree.jpg",
+            webpimg: "img/cardthree.webp",
             name: "На острови!",
             description: [
                 'Хочеш зануритись у тишу, місце де',
@@ -86,7 +89,8 @@ mixin card(oneCard)
             isBike: none
         },
         surfing: {
-            img: "img/cardfour.png",
+            img: "img/cardfour.jpg",
+            webpimg: "img/cardfour.webp",
             name: "Катання на сьорфінгу",
             description: [
                 'Хочеш отримати екстрим та мега',
@@ -102,7 +106,9 @@ mixin curd(twoCard)
     .col-lg-3.col-md-6.mb-xs-3.mb-md-3.mb-lg-0.puckh
         .card.twoCard
             .tCard
-                img.card-img-top(src=twoCard.img)
+                picture
+                    source(srcset=twoCard.img type="image/jpg")
+                    img.card-img-top(src=twoCard.webpimg alt="подорожі")
                 if twoCard.isBike
                     p.biker
                         img.superimg(src="img/biker.svg", alt="велосипед")

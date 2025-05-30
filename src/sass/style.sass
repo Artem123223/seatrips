@@ -305,7 +305,7 @@ main
     top: -15%
     left: -13%
   +media(375)
-    top: -15%
+    top: -15.5%
     left: -11%
   +media(425)
     top: -15%
@@ -319,6 +319,9 @@ main
   +media(576)
     top: -16%
     left: -8%
+  +media(700)
+    top: -12%
+    left: -23%
   +media(768)
     top: -13%
     left: -17%
@@ -352,6 +355,9 @@ main
   +media(576)
     top: 40%
     left: 68%
+  +media(700)
+    top: 42%
+    left: 70%
   +media(768)
     top: 40%
     left: 67%
@@ -418,12 +424,6 @@ main
   +media(687)
     gap: 0
 
-.chuk
-  +media(320)
-    gap: 10px
-  +media(576)
-    gap: 0
-
 .puckh
   +media(687)
     max-width: 50%
@@ -442,7 +442,7 @@ main
   +media(320)
     display: flex
     justify-content: center
-  +media(768)
+  +media(425)
     display: flex
     justify-content: flex-start
   
@@ -489,6 +489,8 @@ figure:last-child > figcaption > p > .imgbox
   color: #999
   font-weight: 400
   margin: 0
+  +media(700)
+    min-height: 133px
   +media(1000)
     min-height: 114px
   +media(1200)
@@ -515,16 +517,12 @@ hr
 
 .island
   position: relative
-  padding-top: 75px
-  padding-bottom: 40px
 
 .h2-abaudna
   font-size: 36px
   text-transform: uppercase
   color: #333
   font-weight: 400
-  padding-top: 10px
-  margin-bottom: 15px
   +media(320)
     font-size: 24px
   +media(1200)
@@ -536,7 +534,6 @@ hr
   color: #333333
   font-weight: 400
   font-style: italic
-  margin-bottom: 39px
   +media(320)
     font-size: 14px
     line-height: 21px
@@ -545,7 +542,7 @@ hr
     line-height: 24px
 
 .gray-box
-  padding: 36px 30px 36px 30px
+  padding: 26px 30px
   background-color: #edf2f5
 
 .oleg
@@ -553,8 +550,6 @@ hr
   background-size: cover
   background-position: center
   background-repeat: no-repeat
-  margin-top: 40px
-  padding: 90px 0 100px
 
 .oleg h2:first-child
   letter-spacing: 2px
@@ -956,9 +951,10 @@ footer h2
   text-transform: uppercase
   color: #333
   font-weight: 400
+  text-align: center
   +media(320)
-    font-size: 20px
-    line-height: 25px
+    font-size: 28px
+    line-height: 35px
     text-align: center
   +media(1200)
     font-size: 36px
@@ -1040,7 +1036,7 @@ footer h2
 
 .absolute
   position: absolute
-  top: 80%
+  top: 83%
   left: 50%
   transform: translateX(-50%)
 
@@ -1075,6 +1071,8 @@ footer h2
 .w-nned
   +media(320)
     width: 57%
+  +media(425)
+    width: 41.5%
   +media(500)
     width: 34%
   +media(576)
@@ -1122,7 +1120,7 @@ footer h2
     height: 100%
     +media(768)
       width: 35px
-    +media(991)
+    +media(1100)
       width: 44px
   &::before
     left: 2%

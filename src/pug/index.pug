@@ -61,11 +61,11 @@ html(lang="en")
                             p.uvaga * - зверніть увагу, зміна ціни може залежати від курсу долара.
                         .col
                             .row.gap-2
-                                .col-xs-12.col-md-4.col-lg
+                                .col-xs-12.col-sm.col-md-4.col-lg
                                     +card(cardInfo.bike)
-                                .col-xs-12.col-md.col-lg
+                                .col-xs-12.col-sm-4.col-md.col-lg
                                     +card(cardInfo.earth)
-                                .col-xs-12.col-md
+                                .col-xs-12.col-sm-4.col-md
                                     +card(cardInfo.message)
                             .row 
                                 .col.w-25.mx-auto
@@ -74,21 +74,23 @@ html(lang="en")
                                         svg.svg-whatineed.bi.bi-arrow-right-circle(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewbox='0 0 16 16')
                                             path(fill-rule='evenodd' d='M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z')
                 hr.hr
-                .island.container.row-s
-                    img.img-first.me-lg-3.mt-4.mb-2(src="img/firstphoto.png", alt="фото безлюдного острова")
+                .island.py-4.container.row-s
+                    picture
+                        source(srcset="img/firstphoto.jpg" type="image/jpg")
+                        img.img-first.me-lg-3.mt-4.mb-2(src="img/firstphoto.webp" alt="фото безлюдного острова")
                     .abaudna.row
                         .col
-                            h2.h2-abaudna.pt-3 Дивовижний безлюдний острів, який зводить людей з розуму
-                            .row
+                            h2.h2-abaudna.pt-3.mb-4 Дивовижний безлюдний острів, який зводить людей з розуму
+                            .row.justify-content-between
                                 .col-sm-12.col-md-6.col-lg-7.me-3
-                                    p.opis.col Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
+                                    p.opis.col.mb-4 Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
                                     .margin-need.row.ms-xs-2.ms-lg-1.ms-xl-1.gap-2.mb-md-3.mb-lg-0.mb-sm-3
                                         a.col-sm-6.col-md-6.col-lg-6.detail.gar(href="#") замовити тут
                                         a.col-sm.col-lg.col-md.col-xl.detial(href="#") детальніше
-                                .gray-box.col-md-5.col-lg-4.text-center.col-sm-12  
+                                .gray-box.col-md-5.col-lg-4.text-center.col-sm-12
                                     h4.price.e 575 грн./день
                                     p.descriptions.gaybox В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
-            .oleg
+            .oleg.mt-5.py-5
                 .container
                     .row.puj
                         .col
@@ -97,7 +99,7 @@ html(lang="en")
                                 h2 ЖИВИ ЯСКРАВО!
                             p.oleg-description Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені інструктори навчать тебе вміло «піймати хвилі» та відчути себе справжнім сьорфером!
                             .g-flexs
-                                a.col-4.detail.gav(href="#") детальніше
+                                a.col-xs-6.col-md-5.col-lg-4.detail.gav(href="#") детальніше
                         .col.cols.text-center.meras
                             svg.lapki(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' viewbox='0 0 100 100' xml:space='preserve')
                                 path(d='M37.77,15.01H14.05c-4.08,0-7.39,3.31-7.39,7.39v23.72c0,4.08,3.31,7.39,7.39,7.39h17.03  c-1.73,9.13-10.12,16.35-20.69,17.74c-2.11,0.28-3.72,2-3.72,4.13v5.45c0,2.45,2.11,4.42,4.55,4.15  c18.9-2.04,33.62-16.66,33.92-34.42c0.01-0.09,0.03-0.18,0.03-0.28V22.39C45.16,18.32,41.85,15.01,37.77,15.01z')
@@ -118,8 +120,8 @@ html(lang="en")
                 hr.hr
         footer
             .container
-                .row.mx-auto.chuk
-                    h2.col-lg-2.col-xl-3 додаткова інформація
+                .row.mx-auto.gap-3
+                    h2.col-lg.col-xl-3.px-0 додаткова інформація
                     .col.mb-xs-3.pe-0.ps-0.pe-lg-0.pe-xl-2.pe-xxl-2
                         .first-information
                             div.d-flex.align-items-center.gap-3
