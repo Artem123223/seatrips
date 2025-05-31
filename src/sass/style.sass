@@ -66,7 +66,7 @@ body
     zoom: 1.5
 
 .puck
-  background-image: url('../img/backgroundtop.png')
+  background-image: url('../img/backgroundtop.jpg')
   background-size: cover
   background-position: bottom
   box-sizing: content-box
@@ -313,12 +313,18 @@ main
   +media(480)
     top: -15%
     left: -9%
+  +media(500)
+    top: -16%
+    left: -8.5%
   +media(550)
     top: -15%
     left: -8%
   +media(576)
     top: -16%
     left: -8%
+  +media(600)
+    top: -11%
+    left: -23%
   +media(700)
     top: -12%
     left: -23%
@@ -329,7 +335,7 @@ main
     top: -14%
     left: -20%
   +media(995)
-    top: -12.5%
+    top: -12%
   +media(1200)
     top: -14%
     left: -16.5%
@@ -387,13 +393,10 @@ main
   width: 100%
   min-height: 150px
   max-height: 300px
+  display: block
   object-fit: cover
   object-position: 50% 75%
-  vertical-align: bottom
   +media(995)
-    max-width: auto
-    height: 250px
-  +media(1024)
     width: auto
   +media(1200)
     width: auto
@@ -401,7 +404,7 @@ main
 .row-s
   display: flex
   flex-wrap: wrap
-  +media(768)
+  +media(500)
     display: block
   +media(995)
     display: flex
@@ -489,7 +492,7 @@ figure:last-child > figcaption > p > .imgbox
   color: #999
   font-weight: 400
   margin: 0
-  +media(700)
+  +media(600)
     min-height: 133px
   +media(1000)
     min-height: 114px
@@ -546,7 +549,7 @@ hr
   background-color: #edf2f5
 
 .oleg
-  background-image: url('../img/backgroundcenter.png') 
+  background-image: url('../img/backgroundcenter.jpg') 
   background-size: cover
   background-position: center
   background-repeat: no-repeat
@@ -786,9 +789,12 @@ hr
   +media(425)
     top: 42%
   +media(500)
-    top: 40%
+    top: 36%
+    left: 80%
   +media(550)
     top: 33%
+  +media(600)
+    top: 39%
   +media(687)
     top: 40%
     left: 81%
@@ -965,13 +971,13 @@ footer h2
   padding: 25px 28px 30px 20px
 
 .first-information
-  background-image: url('../img/informationone.png')
+  background-image: url('../img/informationone.jpg')
   background-size: cover
   background-position: center
   background-repeat: no-repeat
 
 .second-information
-  background-image: url('../img/informationtwo.png')
+  background-image: url('../img/informationtwo.jpg')
   background-size: cover
   background-position: center
   background-repeat: no-repeat
@@ -1159,7 +1165,7 @@ footer h2
     transform: scale(1.1)
 
 .background-bottom
-  background-image: url('../img/backgroundbottom.png')
+  background-image: url('../img/backgroundbottom.jpg')
   background-size: cover
   background-position: center top
   box-sizing: content-box
