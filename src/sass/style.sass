@@ -303,25 +303,31 @@ main
   background-color: #26cb15
   +media(320)
     top: -15%
-    left: -13%
+    left: -13.5%
   +media(375)
     top: -15.5%
     left: -11%
   +media(425)
     top: -15%
     left: -10%
+  +media(450)
+    top: -15%
+    left: -9.5%
   +media(480)
     top: -15%
     left: -9%
   +media(500)
-    top: -16%
-    left: -8.5%
-  +media(550)
     top: -15%
+    left: -8.5%
+  +media(546)
+    top: -15.5%
+    left: -8%
+  +media(550)
+    top: -15.5%
     left: -8%
   +media(576)
-    top: -16%
-    left: -8%
+    top: -11.25%
+    left: -23%
   +media(600)
     top: -11%
     left: -23%
@@ -329,7 +335,7 @@ main
     top: -12%
     left: -23%
   +media(768)
-    top: -12%
+    top: -14%
     left: -18%
   +media(991)
     top: -14%
@@ -339,6 +345,9 @@ main
   +media(1200)
     top: -14%
     left: -16.5%
+  +media(1400)
+    left: -15%
+    top: -13%
 
 .starimg
   position: absolute
@@ -346,9 +355,18 @@ main
   left: 70%
   fill: #fff
   transform: rotate(-45deg)
-  +media(350)
+  +media(320)
+    top: 41%
+    left: 67%
+  +media(340)
+    top: 34%
+    left: 67%
+  +media(375)
     top: 39%
     left: 67%
+  +media(450)
+    top: 39%
+    left: 68%
   +media(500)
     top: 37%
     left: 67%
@@ -356,8 +374,8 @@ main
     top: 36%
     left: 69%
   +media(565)
-    top: 43%
-    left: 71%
+    top: 36%
+    left: 68%
   +media(576)
     top: 40%
     left: 68%
@@ -375,7 +393,7 @@ main
     left: 69%
   +media(1400)
     top: 40%
-    left: 71%
+    left: 69%
   +media(1800)
     top: 44%
     left: 70%
@@ -404,7 +422,7 @@ main
 .row-s
   display: flex
   flex-wrap: wrap
-  +media(500)
+  +media(320)
     display: block
   +media(995)
     display: flex
@@ -492,8 +510,10 @@ figure:last-child > figcaption > p > .imgbox
   color: #999
   font-weight: 400
   margin: 0
-  +media(600)
+  +media(576)
     min-height: 133px
+  +media(768)
+    min-height: auto
   +media(1000)
     min-height: 114px
   +media(1200)
@@ -740,6 +760,9 @@ hr
   +media(425)
     top: 4%
     left: -12%
+  +media(450)
+    top: 3.75%
+    left: -10.5%
   +media(500)
     left: -9.5%
     top: 3%
@@ -750,11 +773,15 @@ hr
     top: 3.5%
     left: -9.5%
   +media(550)
-    top: 3.5%
+    top: 3.25%
     left: -9%
+  +media(565)
+    top: 3.5%
   +media(687)
     top: 4.5%
     left: -18%
+  +media(720)
+    left: -18.75%
   +media(768)
     left: -14%
     top: 4.5%
@@ -779,20 +806,25 @@ hr
   width: 17px
   height: 16px
   top: 40%
-  left: 83%
+  left: 81%
   fill: #fff
   transform: rotate(-45deg) translate(-50%, -50%)
+  +media(320)
+    top: 42%
   +media(375)
     top: 38%
-  +media(450)
-    top: 35%
   +media(425)
     top: 42%
+  +media(450)
+    top: 39%
+    left: 80%
   +media(500)
-    top: 36%
+    top: 42%
     left: 80%
   +media(550)
-    top: 33%
+    top: 38%
+  +media(565)
+    top: 36%
   +media(600)
     top: 39%
   +media(687)
@@ -805,11 +837,11 @@ hr
     top: 45%
     left: 83%
   +media(1024)
-    top: 43%
+    top: 40%
     left: 85%
   +media(1200)
     top: 40%
-    left: 83%
+    left: 81%
 
 .card-title
   font-size: 18px
@@ -988,6 +1020,7 @@ footer h2
   line-height: 24px
   color: #fff
   font-weight: 400
+  min-height: 78px
 
 .size-file
   font-size: 13px
@@ -1001,6 +1034,12 @@ footer h2
   line-height: 19px
   color: #fefefe
   font-weight: 400
+  +media(489)
+    min-height: 133px
+  +media(700)
+    min-height: auto
+  +media(1400)
+    min-height: 95px
 
 .button
   display: inline-block
@@ -1082,7 +1121,7 @@ footer h2
   +media(425)
     width: 41.5%
   +media(500)
-    width: 34%
+    width: 35%
   +media(576)
     width: 35%
   +media(768)
