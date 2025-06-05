@@ -2,7 +2,7 @@ import browserSync from "browser-sync"
 import gulp from "gulp"
 import del from "del"
 import pug from "gulp-pug"
-import coreSass from "sass"
+import * as coreSass from "sass"
 import gulpSass from "gulp-sass"
 import autoprefixer from "gulp-autoprefixer"
 import concat from "gulp-concat"
@@ -15,13 +15,12 @@ import cleanCSS from "gulp-clean-css"
 const sass = gulpSass(coreSass)
 
 export const browserSyncFunc = () => {
-    browserSync ({
+    browserSync({
         server: {
             baseDir: "docs"
         },
         open: true,
         browser: "chrome"
-        //port: 8080
     })
 }
 
@@ -30,9 +29,7 @@ export const html = () => {
     .src([
         "src/pug/*.pug"
     ])
-    .pipe(pug({
-        //pretty: true
-    }))
+    .pipe(pug())
     .pipe(gulp.dest("docs"))
     .pipe(browserSync.reload({
         stream: true
@@ -41,20 +38,20 @@ export const html = () => {
 
 export const css = () => {
     return gulp
-    .src ([
+    .src([
         "src/sass/*.css",
         "src/sass/*.sass"
     ])
     .pipe(sass({
-        outputStyle: "compressed" //expanded, compact
-    })
-    .on("error", sass.logError))
-    .pipe(autoprefixer(["last 15 versions"], {
+        outputStyle: "compressed"
+    }).on("error", sass.logError))
+    .pipe(autoprefixer({
+        overrideBrowserslist: ["last 15 versions"],
         cascade: true
     }))
     .pipe(gcmq("style.css"))
     .pipe(concat("style.css"))
-    .pipe(cleanCSS ({
+    .pipe(cleanCSS({
         compatibility: "ie8"
     }))
     .pipe(gulp.dest("docs/css"))

@@ -14,7 +14,7 @@
   "author": "zavorotna",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^3.0.4",
+    "browser-sync": "^2.27.11",
     "del": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -27,5 +27,8 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify-es": "^3.0.0",
     "sass": "^1.67.0"
+  },
+  "dependencies": {
+    "caniuse-lite": "^1.0.30001721"
   }
 }
